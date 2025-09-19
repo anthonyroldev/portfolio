@@ -13,7 +13,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
     title: "ROLLAND Anthony - Portfolio",
-    description: "IT Student and developer",
+    description: "IT Student and engineer / developer",
     icons: "favicon.ico",
 };
 

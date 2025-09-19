@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import {ModeToggle} from "@/components/theme/theme-toggle"
+import {ModeToggle} from "@/components/Theme/theme-toggle"
 import Nav from "@/components/Header/nav/Nav";
 
 export default function Header() {

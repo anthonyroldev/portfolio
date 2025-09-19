@@ -7,7 +7,7 @@ import {Menu} from 'lucide-react'
 import {Button} from "@/components/ui/button"
 import {Sheet, SheetContent, SheetTrigger} from "@/components/ui/sheet"
 import Image from "next/image"
-import {ModeToggle} from "@/components/theme/theme-toggle";
+import {ModeToggle} from "@/components/Theme/theme-toggle";
 
 const links = [
     {
