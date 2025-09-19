@@ -10,7 +10,8 @@ import {Textarea} from "@/components/ui/textarea"
 import {getLinks} from "@/datas/links"
 import Image from "next/image"
 import emailjs from '@emailjs/browser';
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import {useTheme} from "next-themes";
 
 const FormSchema = z.object({
     name: z.string().min(2, {
@@ -32,7 +33,13 @@ export default function Page() {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
     const [success, setSuccess] = useState(false);
+    const [mounted, setMounted] = useState(false);
     const links = getLinks();
+    const { theme } = useTheme();
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
 
     const form = useForm<z.infer<typeof FormSchema>>({
         resolver: zodResolver(FormSchema),
@@ -43,6 +50,12 @@ export default function Page() {
             message: "",
         },
     })
+
+    const getGitHubIcon = () => {
+        if (!mounted) return "/icons/github-mark-white.png";
+        console.log(theme);
+        return theme === 'dark' ? "/icons/github-mark-white.png" : "/icons/github-mark.png";
+    };
 
     function onSubmit(data: z.infer<typeof FormSchema>) {
         setLoading(true)
@@ -155,7 +168,7 @@ export default function Page() {
                     {links.map((link, key) => (
                         <div className="flex p-12" key={key}>
                             <Image
-                                src={link.icon}
+                                src={link.name === "GitHub" ? getGitHubIcon() : link.icon}
                                 width={70}
                                 height={70}
                                 className={"inline-block"}
