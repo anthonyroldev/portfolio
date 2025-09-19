@@ -23,7 +23,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" suppressHydrationWarning={true} className="dark:bg-background dark:text-foreground">
+        <html lang="en" suppressHydrationWarning={true}>
         <body
             className={`${inter.className} antialiased`}
         >

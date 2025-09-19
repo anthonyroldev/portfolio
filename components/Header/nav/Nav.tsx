@@ -57,7 +57,7 @@ const Nav = () => {
     )
 
     return (
-        <nav className="flex items-center justify-between p-4 bg-background">
+        <nav className="flex items-center justify-between p-4 bg-secondary/50 rounded-2xl border">
             <div className="hidden md:flex gap-6">
                 {links.map((link) => (
                     <NavLink key={link.href} {...link} />

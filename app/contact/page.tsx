@@ -85,7 +85,7 @@ export default function Page() {
                 <Form {...form}>
                     <form
                         onSubmit={form.handleSubmit(onSubmit)}
-                        className="w-full md:w-2/3 space-y-6 mt-8 p-12 rounded-lg shadow-md dark:bg-gray-800"
+                        className={`w-full md:w-2/3 space-y-6 mt-8 p-12 rounded-lg shadow-md`}
                     >
                         {success && (
                             <div role="alert" className="alert alert-success">
