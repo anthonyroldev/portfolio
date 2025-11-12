@@ -1,6 +1,6 @@
 const links = [{
     "name": "GitHub",
-    "url": "https://github.com/PotlaETU",
+    "url": "https://github.com/anthonyroldev",
     "icon": "/icons/github-mark-white.png"
 },
     {
