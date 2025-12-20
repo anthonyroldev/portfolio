@@ -1,13 +1,12 @@
 'use client'
 
-import Link from "next/link"
-import {usePathname} from "next/navigation"
-import {useState} from "react"
-import {Menu} from 'lucide-react'
-import {Button} from "@/components/ui/button"
-import {Sheet, SheetContent, SheetTrigger} from "@/components/ui/sheet"
+import { Button } from "@/components/ui/button"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Menu } from 'lucide-react'
 import Image from "next/image"
-import {ModeToggle} from "@/components/Theme/theme-toggle";
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+import { useState } from "react"
 
 const links = [
     {
@@ -57,7 +56,7 @@ const Nav = () => {
     )
 
     return (
-        <nav className="flex items-center justify-between p-4 bg-secondary/50 rounded-2xl border">
+        <nav className="flex items-center justify-between p-4 rounded-2xl border">
             <div className="hidden md:flex gap-6">
                 {links.map((link) => (
                     <NavLink key={link.href} {...link} />
@@ -75,9 +74,6 @@ const Nav = () => {
                         {links.map((link) => (
                             <NavLink key={link.href} {...link} />
                         ))}
-                    </div>
-                    <div className="mt-6">
-                        <ModeToggle/>
                     </div>
                 </SheetContent>
             </Sheet>

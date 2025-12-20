@@ -5,7 +5,7 @@ export default function Home() {
         <>
             <main className="p-8 text-center min-h-screen md:ml-12">
                 <p className="text-4xl">ROLLAND Anthony</p>
-                <h2 className="text-3xl mt-3 font-bold bg-gradient-to-r
+                <h2 className="text-3xl mt-3 font-bold bg-linear-to-r
                     from-green-400 to-blue-500
                     bg-clip-text text-transparent">
                     Étudiant en informatique - Futur ingénieur logiciel

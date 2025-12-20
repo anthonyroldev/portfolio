@@ -1,8 +1,8 @@
 'use client'
 
-import {getSkills} from "@/datas/skills";
-import {motion} from "framer-motion";
-import {useTheme} from "next-themes";
+import { getSkills } from "@/datas/skills";
+import { motion } from "framer-motion";
+import { useTheme } from "next-themes";
 
 export default function Page() {
     const skills = getSkills();

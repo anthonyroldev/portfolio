@@ -1,17 +1,17 @@
 "use client"
 
-import {zodResolver} from "@hookform/resolvers/zod"
-import {useForm} from "react-hook-form"
-import {z} from "zod"
-import {Button} from "@/components/ui/button"
-import {Form, FormControl, FormField, FormItem, FormLabel, FormMessage} from "@/components/ui/form"
-import {Input} from "@/components/ui/input"
-import {Textarea} from "@/components/ui/textarea"
-import {getLinks} from "@/datas/links"
+import { Button } from "@/components/ui/button"
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
+import { getLinks } from "@/datas/links"
+import emailjs from '@emailjs/browser'
+import { zodResolver } from "@hookform/resolvers/zod"
+import { useTheme } from "next-themes"
 import Image from "next/image"
-import emailjs from '@emailjs/browser';
-import {useEffect, useState} from "react";
-import {useTheme} from "next-themes";
+import { useEffect, useState } from "react"
+import { useForm } from "react-hook-form"
+import { z } from "zod"
 
 const FormSchema = z.object({
     name: z.string().min(2, {
@@ -80,15 +80,15 @@ export default function Page() {
 
     return (
         <>
-            <div className="container mx-auto px-6 pt-10 pb-12 min-h-screen">
-                <h1 className="text-3xl">Un message ?</h1>
+            <div className="p-8 min-h-screen md:ml-12">
+                <h1 className="text-3xl font-bold bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">Un message ?</h1>
                 <Form {...form}>
                     <form
                         onSubmit={form.handleSubmit(onSubmit)}
-                        className={`w-full md:w-2/3 space-y-6 mt-8 p-12 rounded-lg shadow-md`}
+                        className="w-full md:w-2/3 space-y-6 mt-8 p-8 md:p-12 rounded-2xl border shadow-lg"
                     >
                         {success && (
-                            <div role="alert" className="alert alert-success">
+                            <div role="alert" className="flex items-center gap-3 p-4 rounded-lg bg-green-500/20 border border-green-500 text-green-500">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     className="h-6 w-6 shrink-0 stroke-current"
@@ -157,33 +157,36 @@ export default function Page() {
                                 </FormItem>
                             )}
                         />
-                        {loading && (
-                            <span className="loading loading-spinner loading-md"></span>
-                        ) || <Button type="submit">Envoyer</Button>}
+                        {loading ? (
+                            <div className="flex items-center gap-2">
+                                <div className="h-5 w-5 animate-spin rounded-full border-2 border-current border-t-transparent"></div>
+                                <span>Envoi en cours...</span>
+                            </div>
+                        ) : <Button type="submit">Envoyer</Button>}
                     </form>
                     {error && <p className="text-red-500">Une erreur est survenue, veuillez réessayer plus tard.</p>}
                 </Form>
-                <div className="mt-32">
-                    <h1 className="text-3xl">Liens utiles :</h1>
-                    {links.map((link, key) => (
-                        <div className="flex p-12" key={key}>
-                            <Image
-                                src={link.name === "GitHub" ? getGitHubIcon() : link.icon}
-                                width={70}
-                                height={70}
-                                className={"inline-block"}
-                                alt={link.name}
-                            />
+                <div className="mt-16">
+                    <h2 className="text-2xl font-bold bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-transparent mb-8">Liens utiles</h2>
+                    <div className="flex flex-wrap gap-6">
+                        {links.map((link, key) => (
                             <a
+                                key={key}
                                 href={link.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="block px-5 mt-5 text-2xl text-blue-400"
+                                className="flex items-center gap-4 p-4 rounded-xl border transition-all duration-200 hover:scale-105 hover:shadow-lg hover:border-blue-400"
                             >
-                                {link.name}
+                                <Image
+                                    src={link.name === "GitHub" ? getGitHubIcon() : link.icon}
+                                    width={40}
+                                    height={40}
+                                    alt={link.name}
+                                />
+                                <span className="text-lg font-medium">{link.name}</span>
                             </a>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
         </>
