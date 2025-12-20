@@ -7,7 +7,7 @@ const projects: Project[] = [
         description: "API RESTful pour le réseau social PicIt",
         image: "/projects/1/picit.png",
         tags: ["Java", "Spring Boot", "MongoDB", "Neo4j", "Docker"],
-        githubUrl: "https://github.com/PotlaETU/picit-api",
+        githubUrl: "https://github.com/anthonyroldev/picit-api",
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const projects: Project[] = [
         description: "Frontend du réseau social PicIt développé avec NextJS",
         image: "/projects/2/picit_front.png",
         tags: ["TypeScript", "NextJS", "TailwindCSS"],
-        githubUrl: "https://github.com/PotlaETU/picit-front"
+        githubUrl: "https://github.com/anthonyroldev/picit-front"
     },
     {
         id: 3,
@@ -23,7 +23,7 @@ const projects: Project[] = [
         description: "Outil de chiffrement de fichiers (texte, image, audio, vidéo)",
         image: "/projects/3/art_project_2.png",
         tags: ["Spring Shell", "Java", "Chiffrement", "Docker"],
-        githubUrl: "https://github.com/PotlaETU/Fcrpyt",
+        githubUrl: "https://github.com/anthonyroldev/Fcrpyt",
     },
     {
         id: 4,
@@ -31,7 +31,7 @@ const projects: Project[] = [
         description: "Contrats sur la blockchain Ethereum (Sepolia Testnet) permettant de faire des donations à des créateurs, des votes, etc .",
         image: "/projects/4/clear_links.png",
         tags: ["TypeScript", "Solidity", "Ethereum", "Hardat"],
-        githubUrl: "https://github.com/PotlaETU/ClearLinks-Contracts"
+        githubUrl: "https://github.com/anthonyroldev/ClearLinks-Contracts"
     },
     {
         id: 5,
@@ -39,7 +39,7 @@ const projects: Project[] = [
         description: "Site web d'un projet d'évenementiel musical",
         image: "/projects/5/rythmopolis.png",
         tags: ["TypeScript", "Angular", "TailwindCSS"],
-        githubUrl: "https://github.com/PotlaETU/Site-Rythmopolis"
+        githubUrl: "https://github.com/anthonyroldev/Site-Rythmopolis"
     }
 ]
 
