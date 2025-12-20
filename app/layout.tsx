@@ -57,7 +57,7 @@ export const metadata: Metadata = {
             "IT Student and Back-End Developer specializing in software engineering. Explore my portfolio showcasing projects, skills, and expertise.",
         images: [
             {
-                url: "/images/og-image.png", // Create this image (1200x630px recommended)
+                url: "/images/og-image.png",
                 width: 1200,
                 height: 630,
                 alt: "Anthony ROLLAND - Back-End Developer Portfolio",
