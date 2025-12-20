@@ -1,5 +1,4 @@
-import type {Config} from "tailwindcss";
-import daisyui from "daisyui"
+import type { Config } from "tailwindcss";
 
 const config: Config = {
     content: [
@@ -71,9 +70,6 @@ const config: Config = {
             lg: '960px',
             xl: '1200px'
         }
-    },
-    plugins: [
-        daisyui,
-    ],
+    }
 };
 export default config;
