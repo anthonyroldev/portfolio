@@ -53,13 +53,11 @@ export default function Page() {
 
     const getGitHubIcon = () => {
         if (!mounted) return "/icons/github-mark-white.png";
-        console.log(theme);
         return theme === 'dark' ? "/icons/github-mark-white.png" : "/icons/github-mark.png";
     };
 
     function onSubmit(data: z.infer<typeof FormSchema>) {
         setLoading(true)
-        console.log(data)
         emailjs.send(
             'service_jbsrx8t',
             'template_2wx9hct',
@@ -70,11 +68,10 @@ export default function Page() {
             setError(false)
             setSuccess(true)
             form.reset()
-        }, (error) => {
+        }, () => {
             setError(true)
             setLoading(false)
             setSuccess(false)
-            console.error(error);
         })
     }
 
