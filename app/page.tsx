@@ -28,7 +28,7 @@ export default function Home() {
                     priority
                 />
                 <p className="text-lg md:text-xl text-justify max-w-2xl leading-relaxed">
-                    Je m&#39;appelle Anthony Rolland, j&#39;ai 20 ans et je suis étudiant en 1ère année de cycle
+                    Je m&#39;appelle Anthony Rolland, j&#39;ai 21 ans et je suis étudiant en 1ère année de cycle
                     ingénieur à l&#39;INSA Hauts-De-France, spécialité informatique et cybersécurité.
                     <br />
                     <br />
