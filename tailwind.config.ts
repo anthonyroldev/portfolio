@@ -1,12 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-    content: [
-        "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-        "./components/**/*.{js,ts,jsx,tsx,mdx}",
-        "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    ],
-    darkMode: ["class", "class"],
+    darkMode: "class",
     theme: {
         extend: {
             colors: {
@@ -31,13 +26,6 @@ const config: Config = {
                 muted: {
                     DEFAULT: 'hsl(var(--muted))',
                     foreground: 'hsl(var(--muted-foreground))'
-                },
-                accent: {
-                    DEFAULT: '#2394de',
-                    foreground: 'hsl(var(--accent-foreground))',
-                    hover: '#3498db',
-                    light: '#4aa6e6',
-                    accent_dark: '#1d7bc2'
                 },
                 destructive: {
                     DEFAULT: 'hsl(var(--destructive))',
