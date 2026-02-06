@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { ThemeProvider } from 'next-themes';
 import { Inter } from "next/font/google";
@@ -130,6 +131,7 @@ export default function RootLayout({
                     <Header />
                     <main className="flex-1 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                         {children}
+                        <Analytics />
                     </main>
                     <Footer />
                 </ThemeProvider>
