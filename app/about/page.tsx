@@ -27,7 +27,7 @@ export default function Page() {
                         transition={{ delay: 0.1 * index, duration: 0.3 }}
                     >
                         <h3 className="text-xl md:text-2xl font-semibold mb-4">{category.name}</h3>
-                        <div className="grid grid-cols-3 gap-4">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                             {category.skills.map((skill) => (
                                 <div key={skill.name} className="flex flex-col items-center">
                                     <skill.icon className="text-3xl md:text-4xl mb-2 text-accent" />

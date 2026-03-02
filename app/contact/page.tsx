@@ -65,7 +65,7 @@ export default function Page() {
 
     return (
         <section className="py-10 md:py-16">
-            <h1 className="text-3xxl md:text-4xl font-bold bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+            <h1 className="text-3xl md:text-4xl font-bold bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
                 Un message ?
             </h1>
             <Form {...form}>
@@ -189,7 +189,7 @@ export default function Page() {
                                 width={32}
                                 height={32}
                                 alt={link.name}
-                                className="w-8 h-8 md:w-10 md:h-10"
+                                className="w-8 h-8 md:w-10 md:h-10 dark:invert"
                             />
                             <span className="text-base md:text-lg font-medium">{link.name}</span>
                         </a>

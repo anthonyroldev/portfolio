@@ -4,8 +4,8 @@ export default function Home() {
     return (
         <section className="py-10 md:py-16">
             <div className="text-center md:text-left">
-                <p className="text-4xl md:text-5xl font-bold">ROLLAND Anthony</p>
-                <h2 className="text-2xl md:text-3xl mt-4 font-bold bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+                <p className="text-3xl sm:text-4xl md:text-5xl font-bold">ROLLAND Anthony</p>
+                <h2 className="text-xl sm:text-2xl md:text-3xl mt-4 font-bold bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
                     Étudiant en informatique - Futur ingénieur logiciel
                     <br />
                     Alternant développeur back-end chez{" "}
@@ -27,7 +27,7 @@ export default function Home() {
                     className="rounded-3xl w-48 h-56 md:w-72 md:h-80 object-cover shadow-lg"
                     priority
                 />
-                <p className="text-lg md:text-xl text-justify max-w-2xl leading-relaxed">
+                <p className="text-lg md:text-xl text-left max-w-2xl leading-relaxed">
                     Je m&#39;appelle Anthony Rolland, j&#39;ai 21 ans et je suis étudiant en 1ère année de cycle
                     ingénieur à l&#39;INSA Hauts-De-France, spécialité informatique et cybersécurité.
                     <br />

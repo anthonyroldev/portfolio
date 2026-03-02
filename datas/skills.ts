@@ -1,7 +1,8 @@
-import {IconType} from 'react-icons';
-import {FaAngular, FaDocker, FaGitAlt, FaJs, FaLinux, FaPhp, FaPython, FaReact} from 'react-icons/fa';
+import { IconType } from 'react-icons';
+import { DiJava } from "react-icons/di";
+import { FaAngular, FaAws, FaDocker, FaGitAlt, FaJs, FaLinux, FaPhp, FaPython, FaReact } from 'react-icons/fa';
+import { RiNextjsLine } from "react-icons/ri";
 import {
-    SiKubernetes,
     SiLaravel,
     SiMongodb,
     SiMysql,
@@ -11,8 +12,6 @@ import {
     SiSqlite,
     SiTypescript
 } from 'react-icons/si';
-import {RiNextjsLine} from "react-icons/ri";
-import {DiJava} from "react-icons/di";
 
 interface Skill {
     name: string;
@@ -58,8 +57,9 @@ const skills: SkillCategory[] = [
         name: "DevOps",
         skills: [
             {name: "Docker", icon: FaDocker},
-            {name: "Kubernetes", icon: SiKubernetes},
             {name: "Git", icon: FaGitAlt},
+            {name: "CI/CD", icon: FaGitAlt},
+            {name: "AWS", icon: FaAws},
         ],
     },
     {
