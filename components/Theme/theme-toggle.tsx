@@ -11,7 +11,16 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
-export function ModeToggle() {
+interface ModeToggleProps {
+    labels: {
+        toggle: string;
+        light: string;
+        dark: string;
+        system: string;
+    };
+}
+
+export function ModeToggle({ labels }: ModeToggleProps) {
     const { setTheme } = useTheme()
 
     return (
@@ -24,21 +33,21 @@ export function ModeToggle() {
                 >
                     <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
                     <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-                    <span className="sr-only">Changer le thème</span>
+                    <span className="sr-only">{labels.toggle}</span>
                 </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
                 <DropdownMenuItem onClick={() => setTheme("light")} className="cursor-pointer">
                     <Sun className="h-4 w-4 mr-2" />
-                    Clair
+                    {labels.light}
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => setTheme("dark")} className="cursor-pointer">
                     <Moon className="h-4 w-4 mr-2" />
-                    Sombre
+                    {labels.dark}
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => setTheme("system")} className="cursor-pointer">
                     <Monitor className="h-4 w-4 mr-2" />
-                    Système
+                    {labels.system}
                 </DropdownMenuItem>
             </DropdownMenuContent>
         </DropdownMenu>

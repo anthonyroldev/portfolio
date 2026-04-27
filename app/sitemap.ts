@@ -1,32 +1,18 @@
 import { MetadataRoute } from "next";
 
+import { getLocalizedPathname, locales } from "@/lib/i18n/config";
+
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = "https://anthonyrol.me";
+    const lastModified = new Date();
+    const pages = ["/", "/about", "/projects", "/contact"];
 
-    return [
-        {
-            url: baseUrl,
-            lastModified: new Date(),
-            changeFrequency: "weekly",
-            priority: 1.0,
-        },
-        {
-            url: `${baseUrl}/about`,
-            lastModified: new Date(),
-            changeFrequency: "monthly",
-            priority: 0.9,
-        },
-        {
-            url: `${baseUrl}/projects`,
-            lastModified: new Date(),
-            changeFrequency: "weekly",
-            priority: 0.8,
-        },
-        {
-            url: `${baseUrl}/contact`,
-            lastModified: new Date(),
-            changeFrequency: "monthly",
-            priority: 0.7,
-        },
-    ];
+    return locales.flatMap((locale) =>
+        pages.map((page) => ({
+            url: `${baseUrl}${getLocalizedPathname(locale, page)}`,
+            lastModified,
+            changeFrequency: page === "/" ? "weekly" : "monthly",
+            priority: page === "/" ? 1 : 0.8,
+        })),
+    );
 }
