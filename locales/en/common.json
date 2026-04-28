@@ -1,0 +1,73 @@
+{
+    "metadata": {
+        "title": "ROLLAND Anthony | Back-End Developer & Software Engineer",
+        "description": "Computer science student and back-end developer building robust software, APIs, and full-stack products.",
+        "siteName": "Anthony ROLLAND - Portfolio",
+        "ogImageAlt": "Anthony ROLLAND portfolio preview",
+        "jobTitle": "Back-End Developer and Software Engineer",
+        "personDescription": "Computer science student and back-end developer focused on software engineering.",
+        "websiteDescription": "Portfolio of Anthony ROLLAND, back-end developer and software engineering student."
+    },
+    "nav": {
+        "home": "Home",
+        "projects": "Projects",
+        "about": "About",
+        "contact": "Contact",
+        "resume": "Resume",
+        "menu": "Menu",
+        "theme": "Theme",
+        "language": "Language"
+    },
+    "theme": {
+        "toggle": "Change theme",
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System"
+    },
+    "home": {
+        "headline": "Computer science student - Future software engineer",
+        "apprenticeshipPrefix": "Back-end developer apprentice at",
+        "introduction": "My name is Anthony Rolland. I am 21 years old and currently studying in the engineering cycle at INSA Hauts-de-France with a focus on computer science and cybersecurity.",
+        "summary": "I am passionate about new technologies, especially software. This portfolio showcases my skills, academic path, and personal projects built to keep improving."
+    },
+    "about": {
+        "title": "My skills"
+    },
+    "projects": {
+        "title": "My projects",
+        "cta": "GitHub"
+    },
+    "contact": {
+        "title": "A message?",
+        "success": "Your message has been sent. Thank you.",
+        "loading": "Sending...",
+        "submit": "Send",
+        "error": "An error occurred. Please try again later.",
+        "linksTitle": "Useful links",
+        "fields": {
+            "name": "Name",
+            "email": "Email",
+            "subject": "Subject",
+            "message": "Message"
+        },
+        "placeholders": {
+            "name": "Your name",
+            "email": "email@example.com",
+            "subject": "Message subject",
+            "message": "Your message..."
+        },
+        "validation": {
+            "name": "Name must contain at least 2 characters.",
+            "email": "Email address is not valid.",
+            "subject": "Subject must contain at least 2 characters.",
+            "message": "Message must contain at least 10 characters."
+        }
+    },
+    "footer": {
+        "madeBy": "Built by Anthony ROLLAND"
+    },
+    "notFound": {
+        "description": "You are lost",
+        "backHome": "Back home"
+    }
+}

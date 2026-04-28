@@ -1,6 +1,7 @@
-import { IconType } from 'react-icons';
+import type { Locale } from "@/lib/i18n/config";
 import { DiJava } from "react-icons/di";
-import { FaAngular, FaAws, FaDocker, FaGitAlt, FaJs, FaLinux, FaPhp, FaPython, FaReact } from 'react-icons/fa';
+import { FaAngular, FaAws, FaDocker, FaGitAlt, FaJs, FaLinux, FaPhp, FaPython, FaReact } from "react-icons/fa";
+import type { IconType } from "react-icons";
 import { RiNextjsLine } from "react-icons/ri";
 import {
     SiLaravel,
@@ -11,31 +12,42 @@ import {
     SiSpringboot,
     SiSqlite,
     SiTypescript
-} from 'react-icons/si';
+} from "react-icons/si";
 
 interface Skill {
     name: string;
     icon: IconType;
 }
 
-interface SkillCategory {
+export interface SkillCategory {
     name: string;
     skills: Skill[];
 }
 
-const skills: SkillCategory[] = [
+interface SkillCategoryRecord {
+    name: Record<Locale, string>;
+    skills: Skill[];
+}
+
+const skills: SkillCategoryRecord[] = [
     {
-        name: "Front-End",
+        name: {
+            en: "Front-End",
+            fr: "Front-End",
+        },
         skills: [
             {name: "JavaScript", icon: FaJs},
             {name: "TypeScript", icon: SiTypescript},
             {name: "React", icon: FaReact},
-            {name: "NextJS", icon: RiNextjsLine},
+            {name: "Next.js", icon: RiNextjsLine},
             {name: "Angular", icon: FaAngular},
         ],
     },
     {
-        name: "Back-End",
+        name: {
+            en: "Back-End",
+            fr: "Back-End",
+        },
         skills: [
             {name: "Spring Boot", icon: SiSpringboot},
             {name: "Java", icon: DiJava},
@@ -45,7 +57,10 @@ const skills: SkillCategory[] = [
         ],
     },
     {
-        name: "Database",
+        name: {
+            en: "Databases",
+            fr: "Bases de donnees",
+        },
         skills: [
             {name: "MySQL", icon: SiMysql},
             {name: "MongoDB", icon: SiMongodb},
@@ -54,7 +69,10 @@ const skills: SkillCategory[] = [
         ],
     },
     {
-        name: "DevOps",
+        name: {
+            en: "DevOps",
+            fr: "DevOps",
+        },
         skills: [
             {name: "Docker", icon: FaDocker},
             {name: "Git", icon: FaGitAlt},
@@ -63,7 +81,10 @@ const skills: SkillCategory[] = [
         ],
     },
     {
-        name: "Autres",
+        name: {
+            en: "Other",
+            fr: "Autres",
+        },
         skills: [
             {name: "Linux", icon: FaLinux},
             {name: "Nginx", icon: SiNginx},
@@ -71,7 +92,10 @@ const skills: SkillCategory[] = [
     },
 ];
 
-export function getSkills() {
-    return skills;
+export function getSkills(locale: Locale): SkillCategory[] {
+    return skills.map((category) => ({
+        name: category.name[locale],
+        skills: category.skills,
+    }));
 }
 

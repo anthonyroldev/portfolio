@@ -1,0 +1,73 @@
+{
+    "metadata": {
+        "title": "ROLLAND Anthony | Développeur Back-End & Ingénieur Logiciel",
+        "description": "Etudiant en informatique et développeur back-end specialise dans les API, le logiciel et les produits full-stack.",
+        "siteName": "Anthony ROLLAND - Portfolio",
+        "ogImageAlt": "Aperçu du portfolio de Anthony ROLLAND",
+        "jobTitle": "Développeur Back-End et Ingénieur Logiciel",
+        "personDescription": "Etudiant en informatique et développeur back-end oriente ingénierie logicielle.",
+        "websiteDescription": "Portfolio de Anthony ROLLAND, développeur back-end et étudiant en ingénierie logicielle."
+    },
+    "nav": {
+        "home": "Accueil",
+        "projects": "Projets",
+        "about": "A propos",
+        "contact": "Contact",
+        "resume": "CV",
+        "menu": "Menu",
+        "theme": "Theme",
+        "language": "Langue"
+    },
+    "theme": {
+        "toggle": "Changer le thème",
+        "light": "Clair",
+        "dark": "Sombre",
+        "system": "Système"
+    },
+    "home": {
+        "headline": "Etudiant en informatique - Futur ingénieur logiciel",
+        "apprenticeshipPrefix": "Alternant développeur back-end chez",
+        "introduction": "Je m'appelle Anthony Rolland. J'ai 21 ans et je suis etudiant en cycle ingenieur à l'INSA Hauts-de-France, specialité informatique et cybersécurite.",
+        "summary": "Les nouvelles technologies et surtout l'informatique me passionnent. Ce portfolio presente mes compétences, mon parcours et mes projets personnels realises pour progresser en continu."
+    },
+    "about": {
+        "title": "Mes compétences"
+    },
+    "projects": {
+        "title": "Mes projets", 
+        "cta": "GitHub"
+    },
+    "contact": {
+        "title": "Un message ?",
+        "success": "Votre message a bien ete envoyé. Merci.",
+        "loading": "Envoi en cours...",
+        "submit": "Envoyer",
+        "error": "Une erreur est survenue. Veuillez réessayer plus tard.",
+        "linksTitle": "Liens utiles",
+        "fields": {
+            "name": "Nom",
+            "email": "Email",
+            "subject": "Sujet",
+            "message": "Message"
+        },
+        "placeholders": {
+            "name": "Ton nom",
+            "email": "email@email.com",
+            "subject": "Sujet du message",
+            "message": "Ton message..."
+        },
+        "validation": {
+            "name": "Le nom doit contenir au moins 2 caractères.",
+            "email": "L'email n'est pas valide.",
+            "subject": "Le sujet doit contenir au moins 2 caractères.",
+            "message": "Le message doit contenir au moins 10 caractères."
+        }
+    },
+    "footer": {
+        "madeBy": "Fait par Anthony ROLLAND"
+    },
+    "notFound": {
+        "description": "Tu t'es perdu",
+        "backHome": "Retourner à l accueil"
+    }
+}
