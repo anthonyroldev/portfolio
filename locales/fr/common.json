@@ -1,12 +1,12 @@
 {
     "metadata": {
-        "title": "ROLLAND Anthony | Developpeur Back-End & Ingenieur Logiciel",
-        "description": "Etudiant en informatique et developpeur back-end specialise dans les API, le logiciel et les produits full-stack.",
+        "title": "ROLLAND Anthony | Développeur Back-End & Ingénieur Logiciel",
+        "description": "Etudiant en informatique et développeur back-end specialise dans les API, le logiciel et les produits full-stack.",
         "siteName": "Anthony ROLLAND - Portfolio",
-        "ogImageAlt": "Apercu du portfolio de Anthony ROLLAND",
-        "jobTitle": "Developpeur Back-End et Ingenieur Logiciel",
-        "personDescription": "Etudiant en informatique et developpeur back-end oriente ingenierie logicielle.",
-        "websiteDescription": "Portfolio de Anthony ROLLAND, developpeur back-end et etudiant en ingenierie logicielle."
+        "ogImageAlt": "Aperçu du portfolio de Anthony ROLLAND",
+        "jobTitle": "Développeur Back-End et Ingénieur Logiciel",
+        "personDescription": "Etudiant en informatique et développeur back-end oriente ingénierie logicielle.",
+        "websiteDescription": "Portfolio de Anthony ROLLAND, développeur back-end et étudiant en ingénierie logicielle."
     },
     "nav": {
         "home": "Accueil",
@@ -19,30 +19,30 @@
         "language": "Langue"
     },
     "theme": {
-        "toggle": "Changer le theme",
+        "toggle": "Changer le thème",
         "light": "Clair",
         "dark": "Sombre",
-        "system": "Systeme"
+        "system": "Système"
     },
     "home": {
-        "headline": "Etudiant en informatique - Futur ingenieur logiciel",
-        "apprenticeshipPrefix": "Alternant developpeur back-end chez",
-        "introduction": "Je m appelle Anthony Rolland. J ai 21 ans et je suis etudiant en cycle ingenieur a l INSA Hauts-de-France, specialite informatique et cybersecurite.",
-        "summary": "Les nouvelles technologies et surtout l informatique me passionnent. Ce portfolio presente mes competences, mon parcours et mes projets personnels realises pour progresser en continu."
+        "headline": "Etudiant en informatique - Futur ingénieur logiciel",
+        "apprenticeshipPrefix": "Alternant développeur back-end chez",
+        "introduction": "Je m'appelle Anthony Rolland. J'ai 21 ans et je suis etudiant en cycle ingenieur à l'INSA Hauts-de-France, specialité informatique et cybersécurite.",
+        "summary": "Les nouvelles technologies et surtout l'informatique me passionnent. Ce portfolio presente mes compétences, mon parcours et mes projets personnels realises pour progresser en continu."
     },
     "about": {
-        "title": "Mes competences"
+        "title": "Mes compétences"
     },
     "projects": {
-        "title": "Mes projets",
+        "title": "Mes projets", 
         "cta": "GitHub"
     },
     "contact": {
         "title": "Un message ?",
-        "success": "Votre message a bien ete envoye. Merci.",
+        "success": "Votre message a bien ete envoyé. Merci.",
         "loading": "Envoi en cours...",
         "submit": "Envoyer",
-        "error": "Une erreur est survenue. Veuillez reessayer plus tard.",
+        "error": "Une erreur est survenue. Veuillez réessayer plus tard.",
         "linksTitle": "Liens utiles",
         "fields": {
             "name": "Nom",
@@ -57,17 +57,17 @@
             "message": "Ton message..."
         },
         "validation": {
-            "name": "Le nom doit contenir au moins 2 caracteres.",
-            "email": "L email n est pas valide.",
-            "subject": "Le sujet doit contenir au moins 2 caracteres.",
-            "message": "Le message doit contenir au moins 10 caracteres."
+            "name": "Le nom doit contenir au moins 2 caractères.",
+            "email": "L'email n'est pas valide.",
+            "subject": "Le sujet doit contenir au moins 2 caractères.",
+            "message": "Le message doit contenir au moins 10 caractères."
         }
     },
     "footer": {
         "madeBy": "Fait par Anthony ROLLAND"
     },
     "notFound": {
-        "description": "Tu t es perdu",
-        "backHome": "Retourner a l accueil"
+        "description": "Tu t'es perdu",
+        "backHome": "Retourner à l accueil"
     }
 }
