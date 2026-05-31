@@ -1,0 +1,36 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="675" fill="#07121F"/>
+    <circle cx="954" cy="109" r="235" fill="url(#glow)" fill-opacity=".35"/>
+    <circle cx="175" cy="594" r="260" fill="url(#glow)" fill-opacity=".2"/>
+    <path d="M0 544C179 438 316 512 467 435C628 353 753 244 1200 287V675H0V544Z" fill="#0B1D2C"/>
+    <g opacity=".45" stroke="#2394DE">
+        <path d="M818 194L924 255L924 377L818 438L712 377L712 255L818 194Z"/>
+        <path d="M818 235L888 276L888 356L818 397L748 356L748 276L818 235Z"/>
+        <path d="M818 280L849 298V334L818 352L787 334V298L818 280Z"/>
+        <path d="M712 255L748 276M888 276L924 255M888 356L924 377M748 356L712 377"/>
+    </g>
+    <g fill="#4AA6E6">
+        <circle cx="712" cy="255" r="8"/>
+        <circle cx="924" cy="255" r="8"/>
+        <circle cx="924" cy="377" r="8"/>
+        <circle cx="712" cy="377" r="8"/>
+        <circle cx="818" cy="194" r="8"/>
+        <circle cx="818" cy="438" r="8"/>
+    </g>
+    <rect x="100" y="98" width="120" height="30" rx="15" fill="#2394DE" fill-opacity=".18"/>
+    <text x="122" y="119" fill="#4AA6E6" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2">IN PROGRESS</text>
+    <text x="96" y="247" fill="#F4FAFF" font-family="Arial, sans-serif" font-size="88" font-weight="700">RAG API</text>
+    <text x="101" y="299" fill="#8EB9D6" font-family="Arial, sans-serif" font-size="26" letter-spacing="7">SPRING BOOT + PGVECTOR</text>
+    <g transform="translate(102 382)">
+        <rect width="158" height="54" rx="27" fill="#112A3E"/>
+        <text x="34" y="35" fill="#B8E2FA" font-family="Arial, sans-serif" font-size="22" font-weight="700">OLLAMA</text>
+        <rect x="176" width="188" height="54" rx="27" fill="#112A3E"/>
+        <text x="208" y="35" fill="#B8E2FA" font-family="Arial, sans-serif" font-size="22" font-weight="700">POSTGRESQL</text>
+    </g>
+    <defs>
+        <radialGradient id="glow">
+            <stop stop-color="#2394DE"/>
+            <stop offset="1" stop-color="#2394DE" stop-opacity="0"/>
+        </radialGradient>
+    </defs>
+</svg>

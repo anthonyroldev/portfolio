@@ -7,6 +7,17 @@ interface ProjectRecord extends Omit<Project, "description"> {
 
 const projects: ProjectRecord[] = [
     {
+        id: 6,
+        title: "RAG API",
+        description: {
+            en: "A Spring Boot REST API for Retrieval-Augmented Generation (RAG). It embeds documents into PostgreSQL (pgvector) and answers queries using local Ollama models.",
+            fr: "Une API REST Spring Boot pour la generation augmentee par recuperation (RAG). Elle integre des documents dans PostgreSQL (pgvector) et repond aux requetes avec des modeles Ollama locaux.",
+        },
+        image: "/projects/6/rag-api.svg",
+        tags: ["Java", "Spring Boot", "PostgreSQL", "pgvector", "Ollama"],
+        githubUrl: "https://github.com/anthonyroldev/rag-spring",
+    },
+    {
         id: 1,
         title: "API PicIt",
         description: {
