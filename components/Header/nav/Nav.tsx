@@ -61,11 +61,12 @@ const Nav = ({ locale, dictionary }: NavProps) => {
             }`}
             onClick={() => setIsOpen(false)}
         >
-            <Image 
-                src={icon} 
-                alt={label} 
-                width={mobile ? 24 : 20} 
+            <Image
+                src={icon}
+                alt={label}
+                width={mobile ? 24 : 20}
                 height={mobile ? 24 : 20}
+                className="dark:invert"
             />
             {label}
         </Link>
