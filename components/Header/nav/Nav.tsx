@@ -72,7 +72,7 @@ const Nav = ({ locale, dictionary }: NavProps) => {
     )
 
     return (
-        <nav className="flex items-center justify-between p-3 md:p-4 rounded-2xl border border-slate-200 dark:border-slate-700 bg-background/50 backdrop-blur-sm">
+        <nav className="flex items-center justify-end md:justify-between md:p-4 md:rounded-2xl md:border md:border-slate-200 md:dark:border-slate-700 md:bg-background/50 md:backdrop-blur-sm">
             <div className="hidden md:flex gap-6">
                 {links.map((link) => (
                     <NavLink key={link.href} {...link} />
