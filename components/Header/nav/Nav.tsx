@@ -86,7 +86,7 @@ const Nav = ({ locale, dictionary }: NavProps) => {
                         <span className="sr-only">{dictionary.nav.menu}</span>
                     </Button>
                 </SheetTrigger>
-                <SheetContent side="right" className="w-70 sm:w-80">
+                <SheetContent side="right" className="w-[17.5rem] sm:w-80">
                     <SheetHeader>
                         <SheetTitle>{dictionary.nav.menu}</SheetTitle>
                     </SheetHeader>

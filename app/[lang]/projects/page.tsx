@@ -31,7 +31,7 @@ export default async function Page({ params }: PageProps) {
 
     return (
         <section className="py-10 md:py-16">
-            <h1 className="mb-8 bg-linear-to-r from-green-400 to-blue-500 bg-clip-text text-3xl font-bold text-transparent md:text-4xl">
+            <h1 className="mb-8 bg-linear-to-r from-green-600 to-blue-600 bg-clip-text text-3xl font-bold text-transparent dark:from-green-400 dark:to-blue-500 md:text-4xl">
                 {dictionary.projects.title}
             </h1>
             <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

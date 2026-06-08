@@ -114,7 +114,7 @@ export default function ContactForm({ dictionary, links }: ContactFormProps) {
 
     return (
         <section className="py-10 md:py-16">
-            <h1 className="text-3xl font-bold text-transparent md:text-4xl bg-linear-to-r from-green-400 to-blue-500 bg-clip-text">
+            <h1 className="bg-linear-to-r from-green-600 to-blue-600 bg-clip-text text-3xl font-bold text-transparent dark:from-green-400 dark:to-blue-500 md:text-4xl">
                 {dictionary.title}
             </h1>
             <Form {...form}>
@@ -231,7 +231,7 @@ export default function ContactForm({ dictionary, links }: ContactFormProps) {
             </Form>
 
             <div className="mt-16">
-                <h2 className="mb-8 text-2xl font-bold text-transparent md:text-3xl bg-linear-to-r from-green-400 to-blue-500 bg-clip-text">
+                <h2 className="mb-8 bg-linear-to-r from-green-600 to-blue-600 bg-clip-text text-2xl font-bold text-transparent dark:from-green-400 dark:to-blue-500 md:text-3xl">
                     {dictionary.linksTitle}
                 </h2>
                 <div className="flex flex-wrap gap-4 md:gap-6">
@@ -248,7 +248,11 @@ export default function ContactForm({ dictionary, links }: ContactFormProps) {
                                 width={32}
                                 height={32}
                                 alt={link.name}
-                                className="h-8 w-8 dark:invert md:h-10 md:w-10"
+                                className={
+                                    link.name === "GitHub"
+                                        ? "h-8 w-8 dark:invert md:h-10 md:w-10"
+                                        : "h-8 w-8 md:h-10 md:w-10"
+                                }
                             />
                             <span className="text-base font-medium md:text-lg">{link.name}</span>
                         </a>
