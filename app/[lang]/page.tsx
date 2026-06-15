@@ -24,16 +24,6 @@ export default async function Page({ params }: PageProps) {
                 <p className="text-3xl font-bold sm:text-4xl md:text-5xl">ROLLAND Anthony</p>
                 <h1 className="mt-4 bg-linear-to-r from-green-600 to-blue-600 bg-clip-text text-xl font-bold text-transparent dark:from-green-400 dark:to-blue-500 sm:text-2xl md:text-3xl">
                     {dictionary.home.headline}
-                    <br />
-                    {dictionary.home.apprenticeshipPrefix}{" "}
-                    <a
-                        href="https://www.sncf-connect-tech.fr/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:underline"
-                    >
-                        SNCF Connect & Tech
-                    </a>
                 </h1>
                 <Badge
                     variant="outline"
