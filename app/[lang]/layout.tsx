@@ -137,7 +137,10 @@ export default async function RootLayout({ children, params }: LayoutProps) {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-            <div lang={lang} className="min-h-screen bg-background text-foreground">
+            <div
+                lang={lang}
+                className="flex min-h-screen flex-col bg-background text-foreground"
+            >
                 <Header locale={lang} dictionary={dictionary} />
                 <main className="mx-auto flex w-full max-w-6xl flex-1 px-4 sm:px-6 lg:px-8">
                     <div className="w-full">
