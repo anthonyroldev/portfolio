@@ -30,8 +30,6 @@
     "home": {
         "headline": "Je développe des applications back-end avec Java et Spring Boot.",
         "internshipCallout": "Disponible à partir de mai 2027 pour un stage en ingénierie logicielle à l’international.",
-        "introduction": "Je m'appelle Anthony Rolland. J'ai 21 ans et je suis etudiant en cycle ingenieur à l'INSA Hauts-de-France, specialité informatique et cybersécurite.",
-        "summary": "Les nouvelles technologies et surtout l'informatique me passionnent. Ce portfolio presente mes compétences, mon parcours et mes projets personnels realises pour progresser en continu.",
         "portraitAlt": "Portrait d’Anthony Rolland",
         "featuredTitle": "Sélection de projets",
         "allProjects": "Tous les projets",
@@ -42,7 +40,17 @@
         }
     },
     "about": {
-        "title": "Mes compétences"
+        "title": "À propos",
+        "description": "Anthony Rolland étudie l’informatique et la cybersécurité à l’INSA Hauts-de-France et se consacre au développement back-end.",
+        "introduction": "Je m’appelle Anthony Rolland. J’ai 21 ans et je suis en cycle ingénieur à l’INSA Hauts-de-France, en informatique et cybersécurité.",
+        "summary": "Je m’intéresse aux nouvelles technologies, en particulier au développement logiciel. Ce portfolio présente mes compétences, mon parcours et les projets personnels que je réalise pour continuer à progresser.",
+        "skillsTitle": "Compétences techniques",
+        "categories": {
+            "backEnd": "Back-end",
+            "databases": "Bases de données",
+            "devOps": "DevOps",
+            "frontEnd": "Front-end"
+        }
     },
     "projects": {
         "title": "Projets",
