@@ -45,8 +45,21 @@
         "title": "Mes compétences"
     },
     "projects": {
-        "title": "Mes projets",
-        "cta": "GitHub"
+        "title": "Projets",
+        "cta": "GitHub",
+        "description": "Six projets d’Anthony Rolland, des API Java et Spring Boot au chiffrement de fichiers et au développement web.",
+        "statuses": {
+            "inProgress": "En cours"
+        },
+        "descriptions": {
+            "rag": "Une API REST Spring Boot de génération augmentée par récupération (RAG). Elle stocke les représentations vectorielles des documents dans PostgreSQL avec pgvector et répond aux requêtes avec des modèles Ollama locaux.",
+            "picitApi": "Une API REST pour le réseau social PicIt, développée en Java avec Spring Boot. Elle utilise MongoDB et Neo4j.",
+            "picitFront": "L’interface du réseau social PicIt, développée avec Next.js en TypeScript et mise en forme avec Tailwind CSS.",
+            "fcrypt": "Un outil en ligne de commande développé en Java avec Spring Shell pour chiffrer des fichiers texte, image, audio et vidéo.",
+            "clearLinks": "Des contrats intelligents Ethereum sur le réseau de test Sepolia pour les dons, les votes et le soutien aux créateurs.",
+            "rythmopolis": "Le site d’un projet événementiel musical, développé avec Angular et Tailwind CSS."
+        },
+        "encryptionTag": "Chiffrement"
     },
     "contact": {
         "title": "Un message ?",

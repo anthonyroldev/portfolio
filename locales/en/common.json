@@ -45,8 +45,21 @@
         "title": "My skills"
     },
     "projects": {
-        "title": "My projects",
-        "cta": "GitHub"
+        "title": "Projects",
+        "cta": "GitHub",
+        "description": "Six projects by Anthony Rolland, from Java and Spring Boot APIs to file encryption and web development.",
+        "statuses": {
+            "inProgress": "In progress"
+        },
+        "descriptions": {
+            "rag": "A Spring Boot REST API for retrieval-augmented generation (RAG). It stores document embeddings in PostgreSQL with pgvector and answers queries using local Ollama models.",
+            "picitApi": "A REST API for the PicIt social network, built with Java and Spring Boot. It uses MongoDB and Neo4j.",
+            "picitFront": "The Next.js front end for the PicIt social network, written in TypeScript and styled with Tailwind CSS.",
+            "fcrypt": "A Java command-line tool built with Spring Shell to encrypt text, image, audio, and video files.",
+            "clearLinks": "Ethereum smart contracts on the Sepolia testnet for donations, voting, and creator support.",
+            "rythmopolis": "A website for a music events project, built with Angular and Tailwind CSS."
+        },
+        "encryptionTag": "Encryption"
     },
     "contact": {
         "title": "A message?",

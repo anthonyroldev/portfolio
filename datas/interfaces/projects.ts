@@ -6,4 +6,5 @@ export default interface Project {
     tags: string[]
     liveUrl?: string
     githubUrl: string
+    status?: "inProgress"
 }
