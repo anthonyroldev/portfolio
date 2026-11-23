@@ -1,13 +1,21 @@
-import { Analytics } from "@vercel/analytics/next";
-import type { Metadata } from "next";
-import { notFound } from "next/navigation";
-import { ThemeProvider } from "next-themes";
 import type { ReactNode } from "react";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { notFound } from "next/navigation";
+import { Analytics } from "@vercel/analytics/next";
+import { ThemeProvider } from "next-themes";
 
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { hasLocale, locales, type Locale } from "@/lib/i18n/config";
+
+import "@/app/globals.css";
+
+const inter = Inter({
+    subsets: ["latin"],
+    display: "swap",
+});
 
 const localeMap: Record<Locale, string> = {
     en: "en_US",
@@ -34,7 +42,7 @@ export async function generateMetadata({
         metadataBase: new URL("https://anthonyrol.me"),
         title: {
             default: dictionary.metadata.title,
-            template: "%s | ROLLAND Anthony",
+            template: "%s | Anthony Rolland",
         },
         description: dictionary.metadata.description,
         keywords: [
@@ -47,9 +55,9 @@ export async function generateMetadata({
             "full-stack developer",
             "developer portfolio",
         ],
-        authors: [{ name: "Anthony ROLLAND", url: "https://anthonyrol.me" }],
-        creator: "Anthony ROLLAND",
-        publisher: "Anthony ROLLAND",
+        authors: [{ name: "Anthony Rolland", url: "https://anthonyrol.me" }],
+        creator: "Anthony Rolland",
+        publisher: "Anthony Rolland",
         icons: {
             icon: "/favicon.ico",
         },
@@ -103,7 +111,7 @@ export default async function RootLayout({ children, params }: LayoutProps) {
             {
                 "@type": "Person",
                 "@id": "https://anthonyrol.me/#person",
-                name: "Anthony ROLLAND",
+                name: "Anthony Rolland",
                 url: "https://anthonyrol.me",
                 jobTitle: dictionary.metadata.jobTitle,
                 description: dictionary.metadata.personDescription,
@@ -121,35 +129,33 @@ export default async function RootLayout({ children, params }: LayoutProps) {
                 publisher: {
                     "@id": "https://anthonyrol.me/#person",
                 },
-                inLanguage: localeMap[lang],
+                inLanguage: lang,
             },
         ],
     };
 
     return (
-        <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-        >
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-            />
-            <div
-                lang={lang}
-                className="flex min-h-screen flex-col bg-background text-foreground"
-            >
-                <Header locale={lang} dictionary={dictionary} />
-                <main className="mx-auto flex w-full max-w-6xl flex-1 px-4 sm:px-6 lg:px-8">
-                    <div className="w-full">
+        <html lang={lang} suppressHydrationWarning>
+            <body className={inter.className + " flex min-h-screen flex-col bg-background text-foreground antialiased"}>
+                <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+                    <a
+                        href="#main-content"
+                        className="sr-only z-50 rounded-lg bg-primary px-4 py-2 font-medium text-primary-foreground focus:not-sr-only focus:fixed focus:top-2 focus:left-2"
+                    >
+                        {dictionary.nav.skip}
+                    </a>
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                    />
+                    <Header locale={lang} dictionary={dictionary} />
+                    <main id="main-content" tabIndex={-1} className="site-container flex-1">
                         {children}
-                        <Analytics />
-                    </div>
-                </main>
-                <Footer label={dictionary.footer.madeBy} />
-            </div>
-        </ThemeProvider>
+                    </main>
+                    <Footer locale={lang} labels={dictionary.footer} cvLabel={dictionary.nav.resume} />
+                    <Analytics />
+                </ThemeProvider>
+            </body>
+        </html>
     );
 }

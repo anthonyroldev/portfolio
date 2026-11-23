@@ -1,18 +1,17 @@
-import Project from "@/datas/interfaces/projects";
+import type Project from "@/datas/interfaces/projects";
 import type { Locale } from "@/lib/i18n/config";
+import { getDictionary, type Dictionary } from "@/lib/i18n/dictionaries";
 
 interface ProjectRecord extends Omit<Project, "description"> {
-    description: Record<Locale, string>;
+    descriptionKey: keyof Dictionary["projects"]["descriptions"];
 }
 
 const projects: ProjectRecord[] = [
     {
         id: 6,
         title: "RAG API",
-        description: {
-            en: "A Spring Boot REST API for Retrieval-Augmented Generation (RAG). It embeds documents into PostgreSQL (pgvector) and answers queries using local Ollama models.",
-            fr: "Une API REST Spring Boot pour la generation augmentee par recuperation (RAG). Elle integre des documents dans PostgreSQL (pgvector) et repond aux requetes avec des modeles Ollama locaux.",
-        },
+        descriptionKey: "rag",
+        status: "inProgress",
         image: "/projects/6/rag-api.svg",
         tags: ["Java", "Spring Boot", "PostgreSQL", "pgvector", "Ollama"],
         githubUrl: "https://github.com/anthonyroldev/rag-spring",
@@ -20,10 +19,7 @@ const projects: ProjectRecord[] = [
     {
         id: 1,
         title: "API PicIt",
-        description: {
-            en: "REST API for the PicIt social network",
-            fr: "API RESTful pour le reseau social PicIt",
-        },
+        descriptionKey: "picitApi",
         image: "/projects/1/picit.png",
         tags: ["Java", "Spring Boot", "MongoDB", "Neo4j", "Docker"],
         githubUrl: "https://github.com/anthonyroldev/picit-api",
@@ -31,10 +27,7 @@ const projects: ProjectRecord[] = [
     {
         id: 2,
         title: "PicIt Front",
-        description: {
-            en: "Frontend for the PicIt social network built with Next.js",
-            fr: "Frontend du reseau social PicIt developpe avec Next.js",
-        },
+        descriptionKey: "picitFront",
         image: "/projects/2/picit_front.png",
         tags: ["TypeScript", "Next.js", "Tailwind CSS"],
         githubUrl: "https://github.com/anthonyroldev/picit-front",
@@ -42,10 +35,7 @@ const projects: ProjectRecord[] = [
     {
         id: 3,
         title: "FCrypt",
-        description: {
-            en: "File encryption tool for text, image, audio, and video",
-            fr: "Outil de chiffrement de fichiers texte, image, audio et video",
-        },
+        descriptionKey: "fcrypt",
         image: "/projects/3/art_project_2.png",
         tags: ["Spring Shell", "Java", "Encryption", "Docker"],
         githubUrl: "https://github.com/anthonyroldev/Fcrpyt",
@@ -53,10 +43,7 @@ const projects: ProjectRecord[] = [
     {
         id: 4,
         title: "ClearLinks",
-        description: {
-            en: "Ethereum smart contracts on Sepolia for donations, voting, and creator support",
-            fr: "Contrats Ethereum sur Sepolia pour donations, votes et soutien aux createurs",
-        },
+        descriptionKey: "clearLinks",
         image: "/projects/4/clear_links.png",
         tags: ["TypeScript", "Solidity", "Ethereum", "Hardhat"],
         githubUrl: "https://github.com/anthonyroldev/ClearLinks-Contracts",
@@ -64,10 +51,7 @@ const projects: ProjectRecord[] = [
     {
         id: 5,
         title: "Rythmopolis",
-        description: {
-            en: "Website for a music events project",
-            fr: "Site web d un projet d evenementiel musical",
-        },
+        descriptionKey: "rythmopolis",
         image: "/projects/5/rythmopolis.png",
         tags: ["TypeScript", "Angular", "Tailwind CSS"],
         githubUrl: "https://github.com/anthonyroldev/Site-Rythmopolis",
@@ -75,9 +59,10 @@ const projects: ProjectRecord[] = [
 ];
 
 export default function getProjects(locale: Locale): Project[] {
-    return projects.map(({ description, ...project }) => ({
+    const { descriptions, encryptionTag } = getDictionary(locale).projects;
+    return projects.map(({ descriptionKey, ...project }) => ({
         ...project,
-        description: description[locale],
+        description: descriptions[descriptionKey],
+        tags: project.tags.map((tag) => tag === "Encryption" ? encryptionTag : tag),
     }));
 }
-

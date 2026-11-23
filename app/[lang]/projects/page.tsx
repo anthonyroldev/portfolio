@@ -1,22 +1,29 @@
 import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card";
+import ProjectTags from "@/components/Projects/ProjectTags";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import getProjects from "@/datas/projects";
 import { hasLocale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
+import { getPageAlternates } from "@/lib/i18n/metadata";
 
 interface PageProps {
     params: Promise<{ lang: string }>;
+}
+
+export async function generateMetadata({ params }: PageProps) {
+    const { lang } = await params;
+    if (!hasLocale(lang)) {
+        notFound();
+    }
+
+    const { projects } = getDictionary(lang);
+    return {
+        ...getPageAlternates(lang, "/projects"),
+        title: projects.title,
+        description: projects.description,
+    };
 }
 
 export default async function Page({ params }: PageProps) {
@@ -26,77 +33,49 @@ export default async function Page({ params }: PageProps) {
         notFound();
     }
 
-    const dictionary = getDictionary(lang);
-    const projects = getProjects(lang);
+    const { projects } = getDictionary(lang);
 
     return (
-      <section className="mb-16">
-        <h1 className="mb-8 bg-linear-to-r from-green-600 to-blue-600 bg-clip-text text-3xl font-bold text-transparent dark:from-green-400 dark:to-blue-500 md:text-4xl">
-          {dictionary.projects.title}
-        </h1>
-        <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project) => (
-            <Card
-              key={project.id}
-              className="group overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-xl"
-            >
-              <Link
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="relative aspect-video overflow-hidden">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    loading="lazy"
-                  />
-                </div>
-              </Link>
-              <CardHeader className="pb-3">
-                <CardTitle className="text-lg md:text-xl">
-                  {project.title}
-                </CardTitle>
-                <CardDescription className="line-clamp-2 text-sm">
-                  {project.description}
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="mb-4 flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <Badge key={tag} variant="secondary" className="text-xs">
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
-                <Button
-                  size="sm"
-                  variant="outline"
-                  asChild
-                  className="w-full sm:w-auto"
-                >
-                  <Link
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2"
-                  >
-                    <Image
-                      src="/icons/github-mark.png"
-                      alt="GitHub"
-                      width={16}
-                      height={16}
-                      className="dark:invert"
-                    />
-                    {dictionary.projects.cta}
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
+        <section className="py-8 md:py-12">
+            <h1 className="mb-6 text-4xl font-bold tracking-tight md:mb-8">{projects.title}</h1>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {getProjects(lang).map((project, index) => (
+                    <Card key={project.id} className="flex flex-col overflow-hidden rounded-lg border-border bg-card shadow-none">
+                        <div className="relative aspect-video border-b border-border">
+                            <Image
+                                src={project.image}
+                                alt=""
+                                fill
+                                preload={index === 0}
+                                decoding={index === 0 ? "sync" : "async"}
+                                sizes="(min-width: 1100px) 330px, (min-width: 960px) 32vw, (min-width: 640px) 48vw, 92vw"
+                                className="object-contain"
+                            />
+                        </div>
+                        <CardHeader className="p-4 pb-2 md:px-6 md:pt-6">
+                            <div className="flex flex-col gap-1">
+                                <CardTitle><h2 className="text-xl tracking-normal">{project.title}</h2></CardTitle>
+                                {project.status && (
+                                    <p className="font-mono text-label text-accent">{projects.statuses[project.status]}</p>
+                                )}
+                            </div>
+                        </CardHeader>
+                        <CardContent className="flex-1 px-4 pb-4 md:px-6">
+                            <CardDescription><p className="text-base leading-[1.625]">{project.description}</p></CardDescription>
+                            <ProjectTags tags={project.tags} />
+                        </CardContent>
+                        <CardFooter className="px-4 pb-4 md:px-6 md:pb-6">
+                            <a
+                                href={project.githubUrl}
+                                aria-label={projects.sourceLabel.replace("{project}", project.title)}
+                                className="inline-flex min-h-11 w-fit items-center text-sm font-medium text-accent underline underline-offset-4 hover:no-underline"
+                            >
+                                {projects.cta}
+                            </a>
+                        </CardFooter>
+                    </Card>
+                ))}
+            </div>
+        </section>
     );
 }

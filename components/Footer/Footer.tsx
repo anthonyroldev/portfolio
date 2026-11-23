@@ -1,13 +1,29 @@
+import LocaleSwitcher from "@/components/Footer/LocaleSwitcher";
+import { getLinks } from "@/datas/links";
+import type { Locale } from "@/lib/i18n/config";
+import type { Dictionary } from "@/lib/i18n/dictionaries";
+
 interface FooterProps {
-    label: string;
+    locale: Locale;
+    labels: Dictionary["footer"];
+    cvLabel: string;
 }
 
-export default function Footer({ label }: FooterProps) {
+export default function Footer({ locale, labels, cvLabel }: FooterProps) {
+    const links = [{ name: cvLabel, url: "/cv.pdf" }, ...getLinks().filter(({ url }) => url.startsWith("https://"))];
+
     return (
-        <footer className="bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-300 py-6 text-center border-t border-slate-200 dark:border-slate-800">
-            <p className="text-sm">
-                {new Date().getFullYear()} - {label}
-            </p>
+        <footer className="border-t border-border">
+            <div className="site-container flex flex-wrap items-center justify-between gap-x-6 gap-y-3 py-6 text-sm">
+                <nav aria-label={labels.links} className="flex flex-wrap items-center gap-x-4">
+                    {links.map(({ name, url }) => (
+                        <a key={url} href={url} className="inline-flex min-h-9 items-center underline underline-offset-4 hover:text-accent">
+                            {name}
+                        </a>
+                    ))}
+                </nav>
+                <LocaleSwitcher currentLocale={locale} label={labels.language} />
+            </div>
         </footer>
     );
 }

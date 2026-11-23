@@ -14,14 +14,14 @@ pnpm install          # Install dependencies
 pnpm dev              # Start dev server (next dev)
 pnpm build            # Production build (next build) — also runs type checking
 pnpm start            # Serve production build
-pnpm lint             # ESLint via next lint
+pnpm lint             # ESLint CLI with flat config
 ```
 
 **No test framework is configured.** There are no jest/vitest/playwright configs, no test files, and no `test` script. If tests are added, update this section.
 
 ## Project Structure
 
-```
+```text
 app/                  # Next.js App Router — pages, layout, metadata
 components/           # Reusable components
   ui/                 # shadcn/ui primitives (do not manually edit)
@@ -66,7 +66,7 @@ import { cn } from "@/lib/utils"
 ### File & Directory Naming
 
 | Type | Convention | Example |
-|---|---|---|
+| --- | --- | --- |
 | Feature component folders | PascalCase | `Header/`, `Footer/` |
 | Component files | PascalCase | `Header.tsx`, `Nav.tsx` |
 | Theme/utility files | kebab-case | `theme-toggle.tsx` |
@@ -131,7 +131,7 @@ Extends `next/core-web-vitals` and `next/typescript` only. No custom rules. Run 
 ## Dependencies of Note
 
 | Package | Purpose |
-|---|---|
+| --- | --- |
 | `next` ^16.1 | Framework (App Router) |
 | `react` ^19 | UI library |
 | `tailwindcss` ^4 | Utility-first CSS |

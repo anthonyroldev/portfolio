@@ -1,74 +1,123 @@
 {
     "metadata": {
-        "title": "ROLLAND Anthony | Développeur Back-End & Ingénieur Logiciel",
-        "description": "Etudiant en informatique et développeur back-end specialise dans les API, le logiciel et les produits full-stack.",
-        "siteName": "Anthony ROLLAND - Portfolio",
-        "ogImageAlt": "Aperçu du portfolio de Anthony ROLLAND",
-        "jobTitle": "Développeur Back-End et Ingénieur Logiciel",
-        "personDescription": "Etudiant en informatique et développeur back-end oriente ingénierie logicielle.",
-        "websiteDescription": "Portfolio de Anthony ROLLAND, développeur back-end et étudiant en ingénierie logicielle."
+        "title": "Anthony Rolland | Ingénieur logiciel back-end en alternance",
+        "description": "Ingénieur logiciel en alternance, orienté back-end, je développe avec des agents de code. Je cherche un stage à l’étranger à partir de mai 2027.",
+        "siteName": "Portfolio d’Anthony Rolland",
+        "ogImageAlt": "Aperçu du site d’Anthony Rolland",
+        "jobTitle": "Ingénieur logiciel back-end en alternance",
+        "personDescription": "Anthony Rolland étudie l’informatique et la cybersécurité à l’INSA Hauts-de-France. Il développe en alternance côté back-end avec GitHub Copilot et utilise Codex sur ses projets personnels.",
+        "websiteDescription": "Le parcours et les projets d’Anthony Rolland, ingénieur logiciel back-end en alternance."
     },
     "nav": {
         "home": "Accueil",
         "projects": "Projets",
-        "about": "A propos",
+        "about": "À propos",
         "contact": "Contact",
-        "resume": "CV",
+        "resume": "Mon CV",
         "menu": "Menu",
-        "theme": "Theme",
-        "language": "Langue"
+        "primary": "Navigation principale",
+        "skip": "Aller au contenu",
+        "close": "Fermer"
     },
     "theme": {
-        "toggle": "Changer le thème",
+        "toggle": "Changer de thème",
         "light": "Clair",
         "dark": "Sombre",
         "system": "Système"
     },
     "home": {
-        "headline": "Etudiant en informatique - Futur ingénieur logiciel",
-        "apprenticeshipPrefix": "Alternant développeur back-end chez",
-        "internshipCallout": "Recherche stage ingénieur logiciel, à l'international - début mai 2027.",
-        "introduction": "Je m'appelle Anthony Rolland. J'ai 21 ans et je suis etudiant en cycle ingenieur à l'INSA Hauts-de-France, specialité informatique et cybersécurite.",
-        "summary": "Les nouvelles technologies et surtout l'informatique me passionnent. Ce portfolio presente mes compétences, mon parcours et mes projets personnels realises pour progresser en continu."
-    },
-    "about": {
-        "title": "Mes compétences"
-    },
-    "projects": {
-        "title": "Mes projets", 
-        "cta": "GitHub"
-    },
-    "contact": {
-        "title": "Un message ?",
-        "success": "Votre message a bien ete envoyé. Merci.",
-        "loading": "Envoi en cours...",
-        "submit": "Envoyer",
-        "error": "Une erreur est survenue. Veuillez réessayer plus tard.",
-        "linksTitle": "Liens utiles",
-        "fields": {
-            "name": "Nom",
-            "email": "Email",
-            "subject": "Sujet",
-            "message": "Message"
-        },
-        "placeholders": {
-            "name": "Ton nom",
-            "email": "email@email.com",
-            "subject": "Sujet du message",
-            "message": "Ton message..."
-        },
-        "validation": {
-            "name": "Le nom doit contenir au moins 2 caractères.",
-            "email": "L'email n'est pas valide.",
-            "subject": "Le sujet doit contenir au moins 2 caractères.",
-            "message": "Le message doit contenir au moins 10 caractères."
+        "headline": "Je suis ingénieur logiciel en alternance, orienté back-end.",
+        "agenticDevelopment": "J’utilise des agents de code au quotidien. Je pars d’une spécification et je m’appuie sur des skills et des prompts ciblés.",
+        "internshipCallout": "Je cherche un stage en ingénierie logicielle à l’étranger à partir de mai 2027.",
+        "portraitAlt": "Portrait d’Anthony Rolland",
+        "featuredTitle": "Quelques projets",
+        "allProjects": "Tous les projets",
+        "projectSummaries": {
+            "1": "L’API REST du réseau social PicIt, en Java avec Spring Boot.",
+            "3": "Un outil Java pour chiffrer des fichiers depuis le terminal.",
+            "6": "Une API Spring Boot pour poser des questions sur des documents, avec PostgreSQL et Ollama."
         }
     },
+    "about": {
+        "title": "À propos",
+        "description": "J’étudie l’informatique et la cybersécurité à l’INSA Hauts-de-France. En alternance, je développe côté back-end avec GitHub Copilot.",
+        "introduction": "Chez SNCF Connect & Tech, je développe et maintiens des API Spring Boot en utilisant le développement agentique. Sur mon temps libre, je crée une API qui répond à des questions sur des documents avec Spring AI et pgvector.",
+        "workflowTitle": "Comment je travaille avec l’IA",
+        "workflow": "J’utilise GitHub Copilot au travail et Codex sur mes projets personnels. Je pratique le développement guidé par les spécifications (SDD). Avant de coder, je précise le comportement attendu et les critères d’acceptation.",
+        "workflowReview": "Je réutilise des skills pour les tâches récurrentes et j’écris des prompts ciblés pour donner à l’agent le contexte utile. Ça m’aide à économiser des tokens et à obtenir une réponse exploitable en moins d’échanges. Je relis le code et je vérifie qu’il répond à la spécification.",
+        "experienceTitle": "Expérience et formation",
+        "experience": [
+            {
+                "title": "Ingénieur logiciel en alternance",
+                "organization": "SNCF Connect & Tech",
+                "period": "Sept. 2025 – aujourd’hui"
+            },
+            {
+                "title": "Cycle ingénieur en informatique",
+                "organization": "INSA Hauts-de-France",
+                "period": "Sept. 2025 – août 2028 (prévu)"
+            },
+            {
+                "title": "Stagiaire en développement back-end",
+                "organization": "Meelo",
+                "period": "Avr. – juin 2024",
+                "detail": "J’ai développé un microservice de notifications intégré à des services Spring Boot."
+            }
+        ],
+        "skillsTitle": "Compétences techniques",
+        "categories": {
+            "backEnd": "Back-end",
+            "databases": "Bases de données",
+            "devOps": "DevOps",
+            "frontEnd": "Front-end"
+        }
+    },
+    "projects": {
+        "title": "Projets",
+        "cta": "GitHub",
+        "description": "Six de mes projets, dont des API Java et Spring Boot, un outil de chiffrement de fichiers et des sites web.",
+        "statuses": {
+            "inProgress": "En cours"
+        },
+        "descriptions": {
+            "rag": "Cette API REST développée avec Spring Boot répond à des questions sur des documents grâce à la génération augmentée par récupération (RAG). Elle stocke les vecteurs dans PostgreSQL avec pgvector et génère les réponses avec des modèles Ollama exécutés en local.",
+            "picitApi": "PicIt est un réseau social. Son API REST est écrite en Java avec Spring Boot et utilise MongoDB et Neo4j.",
+            "picitFront": "L’interface web du réseau social PicIt utilise Next.js et TypeScript. La mise en forme se fait avec Tailwind CSS.",
+            "fcrypt": "FCrypt chiffre les fichiers texte, image, audio et vidéo depuis le terminal. L’outil est écrit en Java avec Spring Shell.",
+            "clearLinks": "Ces contrats intelligents permettent de voter, de faire des dons et de soutenir des créateurs. Ils tournent sur Sepolia, un réseau de test d’Ethereum.",
+            "rythmopolis": "Rythmopolis est un projet autour des événements musicaux. Son site utilise Angular et Tailwind CSS."
+        },
+        "encryptionTag": "Chiffrement",
+        "sourceLabel": "Voir le code de {project} sur GitHub"
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "Pour m’écrire, utilisez le formulaire ou mon adresse e-mail. Vous me trouverez aussi sur LinkedIn et GitHub.",
+        "formTitle": "M’écrire",
+        "success": "Votre message a été envoyé. Merci de m’avoir écrit.",
+        "loading": "Envoi en cours…",
+        "submit": "Envoyer",
+        "error": "L’envoi a échoué. Réessayez ou écrivez-moi directement à l’adresse ci-dessus.",
+        "fields": {
+            "name": "Nom",
+            "email": "Adresse e-mail",
+            "subject": "Objet",
+            "message": "Message"
+        },
+        "validation": {
+            "name": "Indiquez un nom d’au moins 2 caractères.",
+            "email": "Vérifiez que votre adresse e-mail est valide.",
+            "subject": "Ajoutez un objet d’au moins 2 caractères.",
+            "message": "Écrivez un message d’au moins 10 caractères."
+        },
+        "required": "Tous les champs sont obligatoires."
+    },
     "footer": {
-        "madeBy": "Fait par Anthony ROLLAND"
+        "links": "Liens de pied de page",
+        "language": "Langue"
     },
     "notFound": {
-        "description": "Tu t'es perdu",
-        "backHome": "Retourner à l accueil"
+        "description": "Il n’y a pas de page à cette adresse.",
+        "backHome": "Retour à l’accueil"
     }
 }
