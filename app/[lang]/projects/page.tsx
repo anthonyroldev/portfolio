@@ -14,9 +14,15 @@ import {
 import getProjects from "@/datas/projects";
 import { hasLocale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
+import { getPageAlternates } from "@/lib/i18n/metadata";
 
 interface PageProps {
     params: Promise<{ lang: string }>;
+}
+
+export async function generateMetadata({ params }: PageProps) {
+    const { lang } = await params;
+    return getPageAlternates(lang, "/projects");
 }
 
 export default async function Page({ params }: PageProps) {

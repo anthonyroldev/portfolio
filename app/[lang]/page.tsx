@@ -4,9 +4,15 @@ import { notFound } from "next/navigation";
 import { Badge } from "@/components/ui/badge";
 import { hasLocale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
+import { getPageAlternates } from "@/lib/i18n/metadata";
 
 interface PageProps {
     params: Promise<{ lang: string }>;
+}
+
+export async function generateMetadata({ params }: PageProps) {
+    const { lang } = await params;
+    return getPageAlternates(lang, "/");
 }
 
 export default async function Page({ params }: PageProps) {
@@ -39,7 +45,7 @@ export default async function Page({ params }: PageProps) {
                     width={300}
                     height={300}
                     className="h-56 w-48 rounded-3xl object-cover shadow-lg md:h-80 md:w-72"
-                    priority
+                    preload
                 />
                 <p className="max-w-2xl text-left text-lg leading-relaxed md:text-xl">
                     {dictionary.home.introduction}

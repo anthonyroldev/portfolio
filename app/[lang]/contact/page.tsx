@@ -4,9 +4,15 @@ import ContactForm from "@/components/Contact/ContactForm";
 import { getLinks } from "@/datas/links";
 import { hasLocale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
+import { getPageAlternates } from "@/lib/i18n/metadata";
 
 interface PageProps {
     params: Promise<{ lang: string }>;
+}
+
+export async function generateMetadata({ params }: PageProps) {
+    const { lang } = await params;
+    return getPageAlternates(lang, "/contact");
 }
 
 export default async function Page({ params }: PageProps) {

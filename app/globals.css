@@ -9,10 +9,6 @@
     --color-accent-dark: #1d7bc2;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 svg {
     fill: currentColor;
 }
