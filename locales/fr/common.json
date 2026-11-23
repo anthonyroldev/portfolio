@@ -41,7 +41,7 @@
     "about": {
         "title": "À propos",
         "description": "J’étudie l’informatique et la cybersécurité à l’INSA Hauts-de-France. En alternance, je développe côté back-end avec GitHub Copilot.",
-        "introduction": "Chez SNCF Connect & Tech, je développe des API Spring Boot pour les données de référence des gares et de leurs équipements. Sur mon temps libre, je crée une API qui répond à des questions sur des documents avec Spring AI et pgvector.",
+        "introduction": "Chez SNCF Connect & Tech, je développe et maintiens des API Spring Boot en utilisant le développement agentique. Sur mon temps libre, je crée une API qui répond à des questions sur des documents avec Spring AI et pgvector.",
         "experienceTitle": "Expérience et formation",
         "experience": [
             {

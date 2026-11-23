@@ -41,7 +41,7 @@
     "about": {
         "title": "About",
         "description": "I study computer science and cybersecurity at INSA Hauts-de-France. In my apprenticeship, I use GitHub Copilot for back-end development.",
-        "introduction": "At SNCF Connect & Tech, I build Spring Boot APIs for train station and equipment reference data. Outside work, I’m building an API that answers questions about documents with Spring AI and pgvector.",
+        "introduction": "At SNCF Connect & Tech, I build and maintain Spring Boot APIs using agentic development. Outside work, I’m building an API that answers questions about documents with Spring AI and pgvector.",
         "experienceTitle": "Experience and education",
         "experience": [
             {
