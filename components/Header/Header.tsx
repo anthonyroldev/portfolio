@@ -12,7 +12,7 @@ interface HeaderProps {
 export default function Header({ locale, dictionary }: HeaderProps) {
     return (
         <header className="sticky top-0 z-40 h-(--header-height) border-b border-border bg-background">
-            <div className="mx-auto flex h-full max-w-275 items-center justify-between gap-2 px-4 md:px-8">
+            <div className="site-container flex h-full items-center justify-between gap-2">
                 <Link
                     href={getLocalizedPathname(locale)}
                     className="inline-flex min-h-11 items-center text-sm font-semibold hover:text-accent md:text-base"

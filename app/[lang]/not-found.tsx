@@ -13,7 +13,7 @@ export default function NotFound() {
     const dictionary = getDictionary(locale as Locale);
 
     return (
-        <div className="flex min-h-[60vh] flex-col items-center justify-center px-4 text-center">
+        <div className="flex min-h-[60vh] flex-col items-center justify-center text-center">
             <h1 className="text-4xl font-bold md:text-5xl">404</h1>
             <p className="mt-4 text-xl text-muted-foreground md:text-2xl">
                 {dictionary.notFound.description}

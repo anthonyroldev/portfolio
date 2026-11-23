@@ -149,10 +149,10 @@ export default async function RootLayout({ children, params }: LayoutProps) {
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
                     />
                     <Header locale={lang} dictionary={dictionary} />
-                    <main id="main-content" tabIndex={-1} className="mx-auto w-full max-w-275 flex-1 px-4 md:px-8">
+                    <main id="main-content" tabIndex={-1} className="site-container flex-1">
                         {children}
                     </main>
-                    <Footer label={dictionary.footer.madeBy} />
+                    <Footer locale={lang} labels={dictionary.footer} cvLabel={dictionary.nav.resume} />
                     <Analytics />
                 </ThemeProvider>
             </body>

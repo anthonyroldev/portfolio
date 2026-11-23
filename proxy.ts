@@ -53,9 +53,7 @@ export function proxy(request: NextRequest) {
     const pathnameLocale = getLocaleFromPathname(pathname);
 
     if (pathnameLocale) {
-        const response = NextResponse.next();
-        response.cookies.set(localeCookieName, pathnameLocale, { path: "/" });
-        return response;
+        return NextResponse.next();
     }
 
     const locale = getPreferredLocale(request);
@@ -63,10 +61,7 @@ export function proxy(request: NextRequest) {
 
     redirectUrl.pathname = getLocalizedPathname(locale, pathname);
 
-    const response = NextResponse.redirect(redirectUrl);
-    response.cookies.set(localeCookieName, locale, { path: "/" });
-
-    return response;
+    return NextResponse.redirect(redirectUrl);
 }
 
 export const config = {

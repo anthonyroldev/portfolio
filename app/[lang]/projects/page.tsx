@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
-import { Card } from "@/components/ui/card";
+import ProjectTags from "@/components/Projects/ProjectTags";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import getProjects from "@/datas/projects";
 import { hasLocale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
@@ -51,25 +52,27 @@ export default async function Page({ params }: PageProps) {
                                 className="object-contain"
                             />
                         </div>
-                        <div className="flex flex-1 flex-col p-4 md:p-6">
-                            <h2 className="text-xl font-semibold">{project.title}</h2>
-                            {project.status && (
-                                <p className="mt-1 font-mono text-label text-accent">{projects.statuses[project.status]}</p>
-                            )}
-                            <p className="mt-2 text-muted-foreground">{project.description}</p>
-                            <ul className="mt-4 mb-4 flex flex-wrap gap-x-3 gap-y-1 font-mono text-label text-muted-foreground" role="list">
-                                {project.tags.map((tag) => (
-                                    <li key={tag}>{tag}</li>
-                                ))}
-                            </ul>
+                        <CardHeader className="p-4 pb-2 md:px-6 md:pt-6">
+                            <div className="flex flex-col gap-1">
+                                <CardTitle><h2 className="text-xl tracking-normal">{project.title}</h2></CardTitle>
+                                {project.status && (
+                                    <p className="font-mono text-label text-accent">{projects.statuses[project.status]}</p>
+                                )}
+                            </div>
+                        </CardHeader>
+                        <CardContent className="flex-1 px-4 pb-4 md:px-6">
+                            <CardDescription><p className="text-base leading-[1.625]">{project.description}</p></CardDescription>
+                            <ProjectTags tags={project.tags} />
+                        </CardContent>
+                        <CardFooter className="px-4 pb-4 md:px-6 md:pb-6">
                             <a
                                 href={project.githubUrl}
-                                aria-label={project.title + " · " + projects.cta}
-                                className="mt-auto inline-flex min-h-11 w-fit items-center text-sm font-medium text-accent underline underline-offset-4 hover:no-underline"
+                                aria-label={projects.sourceLabel.replace("{project}", project.title)}
+                                className="inline-flex min-h-11 w-fit items-center text-sm font-medium text-accent underline underline-offset-4 hover:no-underline"
                             >
                                 {projects.cta}
                             </a>
-                        </div>
+                        </CardFooter>
                     </Card>
                 ))}
             </div>

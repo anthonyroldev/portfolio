@@ -1,5 +1,6 @@
 "use client";
 
+import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { Button } from "@/components/ui/button";
@@ -20,10 +21,20 @@ export function ModeToggle({ labels }: { labels: Dictionary["theme"] }) {
             <DropdownMenuTrigger asChild>
                 <Button
                     variant="outline"
+                    size="icon"
                     aria-label={labels.toggle}
-                    className="h-11 px-2 shadow-none hover:bg-card hover:text-foreground md:px-3"
+                    className="relative size-9 rounded-lg shadow-none hover:bg-card hover:text-foreground [&>svg]:size-4"
                 >
-                    {labels.label}
+                    <Sun
+                        aria-hidden="true"
+                        data-icon="inline-start"
+                        className="rotate-0 scale-100 transition-transform dark:-rotate-90 dark:scale-0"
+                    />
+                    <Moon
+                        aria-hidden="true"
+                        data-icon="inline-start"
+                        className="absolute rotate-90 scale-0 transition-transform dark:rotate-0 dark:scale-100"
+                    />
                 </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="border-border shadow-none duration-150">

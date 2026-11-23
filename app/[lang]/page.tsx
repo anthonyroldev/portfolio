@@ -2,8 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import ProjectTags from "@/components/Projects/ProjectTags";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import getProjects from "@/datas/projects";
 import { getLocalizedPathname, hasLocale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
@@ -43,7 +44,8 @@ export default async function Page({ params }: PageProps) {
                     preload
                 />
                 <div className="col-span-2 max-w-[68ch] md:col-span-1 md:row-start-2 md:self-start">
-                    <p className="text-base leading-[1.625] text-muted-foreground">{home.headline}</p>
+                    <p className="text-base leading-[1.625] font-medium">{home.headline}</p>
+                    <p className="mt-2 text-base leading-[1.625] text-muted-foreground">{home.agenticDevelopment}</p>
                     <p className="mt-3 text-base leading-[1.625] font-medium">{home.internshipCallout}</p>
                     <div className="mt-6 flex flex-wrap gap-3">
                         <Button asChild className="h-11 shadow-none">
@@ -69,16 +71,25 @@ export default async function Page({ params }: PageProps) {
                 </div>
                 <div className="grid gap-4 md:grid-cols-3">
                     {featuredProjects.map((project) => (
-                        <Card key={project.id} className="flex flex-col rounded-lg border-border bg-card p-4 shadow-none md:p-6">
-                            <h3 className="text-lg font-semibold">{project.title}</h3>
-                            <p className="mt-2 mb-4 text-base leading-[1.625] text-muted-foreground">{projectSummaries[project.id] ?? project.description}</p>
-                            <a
-                                href={project.githubUrl}
-                                aria-label={project.title + " · " + projects.cta}
-                                className="mt-auto inline-flex min-h-11 w-fit items-center text-sm font-medium text-accent underline underline-offset-4 hover:no-underline"
-                            >
-                                {projects.cta}
-                            </a>
+                        <Card key={project.id} className="flex flex-col rounded-lg border-border bg-card shadow-none">
+                            <CardHeader className="p-4 pb-2 md:px-6 md:pt-6">
+                                <CardTitle><h3 className="text-lg tracking-normal">{project.title}</h3></CardTitle>
+                            </CardHeader>
+                            <CardContent className="flex-1 px-4 pb-4 md:px-6">
+                                <CardDescription>
+                                    <p className="text-base leading-[1.625]">{projectSummaries[project.id] ?? project.description}</p>
+                                </CardDescription>
+                                <ProjectTags tags={project.tags} />
+                            </CardContent>
+                            <CardFooter className="px-4 pb-4 md:px-6 md:pb-6">
+                                <a
+                                    href={project.githubUrl}
+                                    aria-label={projects.sourceLabel.replace("{project}", project.title)}
+                                    className="inline-flex min-h-11 w-fit items-center text-sm font-medium text-accent underline underline-offset-4 hover:no-underline"
+                                >
+                                    {projects.cta}
+                                </a>
+                            </CardFooter>
                         </Card>
                     ))}
                 </div>

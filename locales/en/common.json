@@ -1,21 +1,20 @@
 {
     "metadata": {
-        "title": "Anthony Rolland | Java & Spring Boot Developer",
-        "description": "Anthony Rolland builds back-end software with Java and Spring Boot and is available for an international software engineering internship from May 2027.",
+        "title": "Anthony Rolland | Apprentice back-end software engineer",
+        "description": "I’m an apprentice back-end software engineer who works with coding agents. I’m looking for a software engineering internship abroad from May 2027.",
         "siteName": "Anthony Rolland Portfolio",
-        "ogImageAlt": "Preview of Anthony Rolland’s portfolio",
-        "jobTitle": "Back-end developer",
-        "personDescription": "Computer science and cybersecurity engineering student who builds back-end software with Java and Spring Boot.",
-        "websiteDescription": "Software engineering projects by Anthony Rolland."
+        "ogImageAlt": "Preview of Anthony Rolland’s website",
+        "jobTitle": "Apprentice back-end software engineer",
+        "personDescription": "Anthony Rolland studies computer science and cybersecurity at INSA Hauts-de-France. He uses GitHub Copilot for back-end development during his apprenticeship and Codex on personal projects.",
+        "websiteDescription": "The background and projects of Anthony Rolland, an apprentice back-end software engineer."
     },
     "nav": {
         "home": "Home",
         "projects": "Projects",
         "about": "About",
         "contact": "Contact",
-        "resume": "View CV",
+        "resume": "My CV",
         "menu": "Menu",
-        "language": "FR — View in French",
         "primary": "Main navigation",
         "skip": "Skip to main content",
         "close": "Close"
@@ -24,26 +23,44 @@
         "toggle": "Change theme",
         "light": "Light",
         "dark": "Dark",
-        "system": "System",
-        "label": "Theme"
+        "system": "System"
     },
     "home": {
-        "headline": "I build back-end software with Java and Spring Boot.",
-        "internshipCallout": "Available from May 2027 for an international software engineering internship.",
+        "headline": "I’m an apprentice software engineer focused on back-end development.",
+        "agenticDevelopment": "I use GitHub Copilot for agentic development at work and Codex on my personal projects.",
+        "internshipCallout": "I’m looking for a software engineering internship abroad starting in May 2027.",
         "portraitAlt": "Portrait of Anthony Rolland",
-        "featuredTitle": "Selected projects",
+        "featuredTitle": "A few projects",
         "allProjects": "All projects",
         "projectSummaries": {
-            "1": "Java and Spring Boot REST API for the PicIt social network.",
-            "3": "Java command-line tool for encrypting files.",
-            "6": "Spring Boot API that answers questions about documents using PostgreSQL and Ollama."
+            "1": "The PicIt social network’s REST API, written in Java with Spring Boot.",
+            "3": "A Java tool for encrypting files from the command line.",
+            "6": "A Spring Boot API for asking questions about documents, using PostgreSQL and Ollama."
         }
     },
     "about": {
         "title": "About",
-        "description": "Anthony Rolland studies computer science and cybersecurity at INSA Hauts-de-France and focuses on back-end software engineering.",
-        "introduction": "I’m Anthony Rolland, a 21-year-old engineering student at INSA Hauts-de-France, where I study computer science and cybersecurity.",
-        "summary": "I’m interested in new technologies, especially software development. This portfolio brings together my skills, studies and the personal projects I build to keep learning.",
+        "description": "I study computer science and cybersecurity at INSA Hauts-de-France. In my apprenticeship, I use GitHub Copilot for back-end development.",
+        "introduction": "At SNCF Connect & Tech, I build Spring Boot APIs for train station and equipment reference data. Outside work, I’m building an API that answers questions about documents with Spring AI and pgvector.",
+        "experienceTitle": "Experience and education",
+        "experience": [
+            {
+                "title": "Apprentice software engineer",
+                "organization": "SNCF Connect & Tech",
+                "period": "Sep 2025 – present"
+            },
+            {
+                "title": "Computer science engineering program",
+                "organization": "INSA Hauts-de-France",
+                "period": "Sep 2025 – Aug 2028 (expected)"
+            },
+            {
+                "title": "Back-end developer intern",
+                "organization": "Meelo",
+                "period": "Apr – Jun 2024",
+                "detail": "Built a notification microservice that integrates with Spring Boot services."
+            }
+        ],
         "skillsTitle": "Technical skills",
         "categories": {
             "backEnd": "Back-End",
@@ -55,28 +72,29 @@
     "projects": {
         "title": "Projects",
         "cta": "GitHub",
-        "description": "Six projects by Anthony Rolland, from Java and Spring Boot APIs to file encryption and web development.",
+        "description": "Six of my projects, including Java and Spring Boot APIs, a file encryption tool, and websites.",
         "statuses": {
             "inProgress": "In progress"
         },
         "descriptions": {
-            "rag": "A Spring Boot REST API for retrieval-augmented generation (RAG). It stores document embeddings in PostgreSQL with pgvector and answers queries using local Ollama models.",
-            "picitApi": "A REST API for the PicIt social network, built with Java and Spring Boot. It uses MongoDB and Neo4j.",
-            "picitFront": "The Next.js front end for the PicIt social network, written in TypeScript and styled with Tailwind CSS.",
-            "fcrypt": "A Java command-line tool built with Spring Shell to encrypt text, image, audio, and video files.",
-            "clearLinks": "Ethereum smart contracts on the Sepolia testnet for donations, voting, and creator support.",
-            "rythmopolis": "A website for a music events project, built with Angular and Tailwind CSS."
+            "rag": "This Spring Boot REST API uses retrieval-augmented generation (RAG) to answer questions about documents. It stores their embeddings in PostgreSQL with pgvector and generates answers with local Ollama models.",
+            "picitApi": "PicIt is a social network. Its REST API uses Java, Spring Boot, MongoDB, and Neo4j.",
+            "picitFront": "The PicIt social network’s web interface runs on Next.js. It uses TypeScript and Tailwind CSS.",
+            "fcrypt": "FCrypt encrypts text, image, audio, and video files from the command line. It’s written in Java with Spring Shell.",
+            "clearLinks": "These smart contracts handle donations, voting, and creator support on Sepolia, an Ethereum testnet.",
+            "rythmopolis": "Rythmopolis is a music events project. Its website uses Angular and Tailwind CSS."
         },
-        "encryptionTag": "Encryption"
+        "encryptionTag": "Encryption",
+        "sourceLabel": "View the code for {project} on GitHub"
     },
     "contact": {
         "title": "Contact",
-        "description": "Contact Anthony Rolland by email, LinkedIn, GitHub, or the portfolio’s contact form.",
-        "formTitle": "Send a message",
-        "success": "Your message was sent. Thank you.",
+        "description": "You can reach me by email or through the form. I’m also on LinkedIn and GitHub.",
+        "formTitle": "Write to me",
+        "success": "Your message was sent. Thanks for writing.",
         "loading": "Sending…",
-        "submit": "Send message",
-        "error": "Your message couldn’t be sent. Try again or use the email address above.",
+        "submit": "Send",
+        "error": "The message couldn’t be sent. Try again or email me directly at the address above.",
         "fields": {
             "name": "Name",
             "email": "Email address",
@@ -84,18 +102,20 @@
             "message": "Message"
         },
         "validation": {
-            "name": "Enter a name with at least 2 characters.",
-            "email": "Enter a valid email address.",
-            "subject": "Enter a subject with at least 2 characters.",
-            "message": "Enter a message with at least 10 characters."
+            "name": "Use at least 2 characters for your name.",
+            "email": "Check that your email address is valid.",
+            "subject": "Add a subject of at least 2 characters.",
+            "message": "Write a message of at least 10 characters."
         },
         "required": "All fields are required."
     },
     "footer": {
-        "madeBy": "Built by Anthony Rolland"
+        "madeBy": "Built by Anthony Rolland",
+        "links": "Footer links",
+        "language": "Language"
     },
     "notFound": {
-        "description": "Page not found",
-        "backHome": "Back to home"
+        "description": "There’s no page at this address.",
+        "backHome": "Back to the home page"
     }
 }

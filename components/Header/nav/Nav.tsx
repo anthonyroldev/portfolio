@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-import LocaleSwitcher from "@/components/Header/LocaleSwitcher";
 import { ModeToggle } from "@/components/Theme/theme-toggle";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetClose, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
@@ -44,7 +43,6 @@ export default function Nav({ locale, labels, theme }: NavProps) {
             <nav aria-label={labels.primary} className="mr-2 hidden items-center gap-4 md:flex lg:mr-4 lg:gap-6">
                 {navLinks}
             </nav>
-            <LocaleSwitcher currentLocale={locale} label={labels.language} />
             <ModeToggle labels={theme} />
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
                 <SheetTrigger asChild>
