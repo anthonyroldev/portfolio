@@ -44,8 +44,8 @@ export default async function Page({ params }: PageProps) {
                     preload
                 />
                 <div className="col-span-2 max-w-[68ch] md:col-span-1 md:row-start-2 md:self-start">
-                    <p className="hero-text-accent w-fit text-base leading-[1.625] font-medium">{home.headline}</p>
-                    <p className="hero-text-accent mt-2 w-fit text-base leading-[1.625] font-medium">{home.internshipCallout}</p>
+                    <p className="hero-text-accent w-fit text-xl/7 font-semibold tracking-tight text-pretty md:text-2xl/8">{home.headline}</p>
+                    <p className="hero-text-accent mt-2 w-fit text-xl/7 font-semibold tracking-tight text-pretty md:text-2xl/8">{home.internshipCallout}</p>
                     <p className="mt-3 text-base leading-[1.625] text-muted-foreground">{home.agenticDevelopment}</p>
                     <div className="mt-6 flex flex-wrap gap-3">
                         <Button asChild className="h-11 shadow-none">
