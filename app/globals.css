@@ -83,6 +83,10 @@
     outline-offset: 2px;
 }
 
+body > [data-state]:has(+ [role="dialog"]) {
+    backdrop-filter: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,

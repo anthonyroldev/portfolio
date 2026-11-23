@@ -38,13 +38,15 @@ export default async function Page({ params }: PageProps) {
         <section className="py-8 md:py-12">
             <h1 className="mb-6 text-4xl font-bold tracking-tight md:mb-8">{projects.title}</h1>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {getProjects(lang).map((project) => (
+                {getProjects(lang).map((project, index) => (
                     <Card key={project.id} className="flex flex-col overflow-hidden rounded-lg border-border bg-card shadow-none">
                         <div className="relative aspect-video border-b border-border">
                             <Image
                                 src={project.image}
                                 alt=""
                                 fill
+                                preload={index === 0}
+                                decoding={index === 0 ? "sync" : "async"}
                                 sizes="(min-width: 1100px) 330px, (min-width: 960px) 32vw, (min-width: 640px) 48vw, 92vw"
                                 className="object-contain"
                             />

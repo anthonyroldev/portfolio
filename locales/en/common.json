@@ -70,30 +70,26 @@
         "encryptionTag": "Encryption"
     },
     "contact": {
-        "title": "A message?",
-        "success": "Your message has been sent. Thank you.",
-        "loading": "Sending...",
-        "submit": "Send",
-        "error": "An error occurred. Please try again later.",
-        "linksTitle": "Useful links",
+        "title": "Contact",
+        "description": "Contact Anthony Rolland by email, LinkedIn, GitHub, or the portfolio’s contact form.",
+        "formTitle": "Send a message",
+        "success": "Your message was sent. Thank you.",
+        "loading": "Sending…",
+        "submit": "Send message",
+        "error": "Your message couldn’t be sent. Try again or use the email address above.",
         "fields": {
             "name": "Name",
-            "email": "Email",
+            "email": "Email address",
             "subject": "Subject",
             "message": "Message"
         },
-        "placeholders": {
-            "name": "Your name",
-            "email": "email@example.com",
-            "subject": "Message subject",
-            "message": "Your message..."
-        },
         "validation": {
-            "name": "Name must contain at least 2 characters.",
-            "email": "Email address is not valid.",
-            "subject": "Subject must contain at least 2 characters.",
-            "message": "Message must contain at least 10 characters."
-        }
+            "name": "Enter a name with at least 2 characters.",
+            "email": "Enter a valid email address.",
+            "subject": "Enter a subject with at least 2 characters.",
+            "message": "Enter a message with at least 10 characters."
+        },
+        "required": "All fields are required."
     },
     "footer": {
         "madeBy": "Built by Anthony Rolland"
