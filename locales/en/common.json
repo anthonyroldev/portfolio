@@ -1,35 +1,45 @@
 {
     "metadata": {
-        "title": "ROLLAND Anthony | Back-End Developer & Software Engineer",
-        "description": "Computer science student and back-end developer building robust software, APIs, and full-stack products.",
-        "siteName": "Anthony ROLLAND - Portfolio",
-        "ogImageAlt": "Anthony ROLLAND portfolio preview",
-        "jobTitle": "Back-End Developer and Software Engineer",
-        "personDescription": "Computer science student and back-end developer focused on software engineering.",
-        "websiteDescription": "Portfolio of Anthony ROLLAND, back-end developer and software engineering student."
+        "title": "Anthony Rolland | Java & Spring Boot Developer",
+        "description": "Anthony Rolland builds back-end software with Java and Spring Boot and is available for an international software engineering internship from May 2027.",
+        "siteName": "Anthony Rolland Portfolio",
+        "ogImageAlt": "Preview of Anthony Rolland’s portfolio",
+        "jobTitle": "Back-end developer",
+        "personDescription": "Computer science and cybersecurity engineering student who builds back-end software with Java and Spring Boot.",
+        "websiteDescription": "Software engineering projects by Anthony Rolland."
     },
     "nav": {
         "home": "Home",
         "projects": "Projects",
         "about": "About",
         "contact": "Contact",
-        "resume": "Resume",
+        "resume": "View CV",
         "menu": "Menu",
-        "theme": "Theme",
-        "language": "Language"
+        "language": "FR — View in French",
+        "primary": "Main navigation",
+        "skip": "Skip to main content",
+        "close": "Close"
     },
     "theme": {
         "toggle": "Change theme",
         "light": "Light",
         "dark": "Dark",
-        "system": "System"
+        "system": "System",
+        "label": "Theme"
     },
     "home": {
-        "headline": "Computer science student - Future software engineer",
-        "apprenticeshipPrefix": "Back-end developer apprentice at",
-        "internshipCallout": "Seeking a software engineering internship abroad, outside France, starting May 2027.",
+        "headline": "I build back-end software with Java and Spring Boot.",
+        "internshipCallout": "Available from May 2027 for an international software engineering internship.",
         "introduction": "My name is Anthony Rolland. I am 21 years old and currently studying in the engineering cycle at INSA Hauts-de-France with a focus on computer science and cybersecurity.",
-        "summary": "I am passionate about new technologies, especially software. This portfolio showcases my skills, academic path, and personal projects built to keep improving."
+        "summary": "I am passionate about new technologies, especially software. This portfolio showcases my skills, academic path, and personal projects built to keep improving.",
+        "portraitAlt": "Portrait of Anthony Rolland",
+        "featuredTitle": "Selected projects",
+        "allProjects": "All projects",
+        "projectSummaries": {
+            "1": "Java and Spring Boot REST API for the PicIt social network.",
+            "3": "Java command-line tool for encrypting files.",
+            "6": "Spring Boot API that answers questions about documents using PostgreSQL and Ollama."
+        }
     },
     "about": {
         "title": "My skills"
@@ -65,10 +75,10 @@
         }
     },
     "footer": {
-        "madeBy": "Built by Anthony ROLLAND"
+        "madeBy": "Built by Anthony Rolland"
     },
     "notFound": {
-        "description": "You are lost",
-        "backHome": "Back home"
+        "description": "Page not found",
+        "backHome": "Back to home"
     }
 }

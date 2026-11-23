@@ -1,41 +1,51 @@
 {
     "metadata": {
-        "title": "ROLLAND Anthony | Développeur Back-End & Ingénieur Logiciel",
-        "description": "Etudiant en informatique et développeur back-end specialise dans les API, le logiciel et les produits full-stack.",
-        "siteName": "Anthony ROLLAND - Portfolio",
-        "ogImageAlt": "Aperçu du portfolio de Anthony ROLLAND",
-        "jobTitle": "Développeur Back-End et Ingénieur Logiciel",
-        "personDescription": "Etudiant en informatique et développeur back-end oriente ingénierie logicielle.",
-        "websiteDescription": "Portfolio de Anthony ROLLAND, développeur back-end et étudiant en ingénierie logicielle."
+        "title": "Anthony Rolland | Développeur Java et Spring Boot",
+        "description": "Anthony Rolland développe des applications back-end avec Java et Spring Boot. Il recherche un stage en ingénierie logicielle à l’international à partir de mai 2027.",
+        "siteName": "Portfolio d’Anthony Rolland",
+        "ogImageAlt": "Aperçu du portfolio d’Anthony Rolland",
+        "jobTitle": "Développeur back-end",
+        "personDescription": "Étudiant en ingénierie informatique et cybersécurité, Anthony développe des applications back-end avec Java et Spring Boot.",
+        "websiteDescription": "Projets d’ingénierie logicielle d’Anthony Rolland."
     },
     "nav": {
         "home": "Accueil",
         "projects": "Projets",
-        "about": "A propos",
+        "about": "À propos",
         "contact": "Contact",
-        "resume": "CV",
+        "resume": "Voir le CV",
         "menu": "Menu",
-        "theme": "Theme",
-        "language": "Langue"
+        "language": "EN — Voir en anglais",
+        "primary": "Navigation principale",
+        "skip": "Aller au contenu",
+        "close": "Fermer"
     },
     "theme": {
         "toggle": "Changer le thème",
         "light": "Clair",
         "dark": "Sombre",
-        "system": "Système"
+        "system": "Système",
+        "label": "Thème"
     },
     "home": {
-        "headline": "Etudiant en informatique - Futur ingénieur logiciel",
-        "apprenticeshipPrefix": "Alternant développeur back-end chez",
-        "internshipCallout": "Recherche stage ingénieur logiciel, à l'international - début mai 2027.",
+        "headline": "Je développe des applications back-end avec Java et Spring Boot.",
+        "internshipCallout": "Disponible à partir de mai 2027 pour un stage en ingénierie logicielle à l’international.",
         "introduction": "Je m'appelle Anthony Rolland. J'ai 21 ans et je suis etudiant en cycle ingenieur à l'INSA Hauts-de-France, specialité informatique et cybersécurite.",
-        "summary": "Les nouvelles technologies et surtout l'informatique me passionnent. Ce portfolio presente mes compétences, mon parcours et mes projets personnels realises pour progresser en continu."
+        "summary": "Les nouvelles technologies et surtout l'informatique me passionnent. Ce portfolio presente mes compétences, mon parcours et mes projets personnels realises pour progresser en continu.",
+        "portraitAlt": "Portrait d’Anthony Rolland",
+        "featuredTitle": "Sélection de projets",
+        "allProjects": "Tous les projets",
+        "projectSummaries": {
+            "1": "API REST en Java et Spring Boot pour le réseau social PicIt.",
+            "3": "Outil en ligne de commande écrit en Java pour chiffrer des fichiers.",
+            "6": "API Spring Boot qui répond à des questions sur des documents avec PostgreSQL et Ollama."
+        }
     },
     "about": {
         "title": "Mes compétences"
     },
     "projects": {
-        "title": "Mes projets", 
+        "title": "Mes projets",
         "cta": "GitHub"
     },
     "contact": {
@@ -65,10 +75,10 @@
         }
     },
     "footer": {
-        "madeBy": "Fait par Anthony ROLLAND"
+        "madeBy": "Portfolio d’Anthony Rolland"
     },
     "notFound": {
-        "description": "Tu t'es perdu",
-        "backHome": "Retourner à l accueil"
+        "description": "Page introuvable",
+        "backHome": "Retour à l’accueil"
     }
 }

@@ -1,13 +1,7 @@
-interface FooterProps {
-    label: string;
-}
-
-export default function Footer({ label }: FooterProps) {
+export default function Footer({ label }: { label: string }) {
     return (
-        <footer className="bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-300 py-6 text-center border-t border-slate-200 dark:border-slate-800">
-            <p className="text-sm">
-                {new Date().getFullYear()} - {label}
-            </p>
+        <footer className="border-t border-border">
+            <p className="mx-auto max-w-275 px-4 py-6 text-sm text-muted-foreground md:px-8">{label}</p>
         </footer>
     );
 }
