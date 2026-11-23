@@ -1,0 +1,397 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-23T09:35:17.165Z",
+  "title": "Design System: Anthony Rolland Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "Primary",
+        "displayName": "Pale blue",
+        "tonalRamp": [
+          "oklch(15% 0.0895 263.2)",
+          "oklch(26% 0.0895 263.2)",
+          "oklch(38% 0.0895 263.2)",
+          "oklch(49% 0.0895 263.2)",
+          "oklch(60% 0.0895 263.2)",
+          "oklch(72% 0.0895 263.2)",
+          "oklch(83% 0.0895 263.2)",
+          "oklch(95% 0.0895 263.2)"
+        ]
+      },
+      "on-primary": {
+        "role": "Primary",
+        "displayName": "Text on pale blue",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0.0)",
+          "oklch(26% 0.0000 0.0)",
+          "oklch(38% 0.0000 0.0)",
+          "oklch(49% 0.0000 0.0)",
+          "oklch(60% 0.0000 0.0)",
+          "oklch(72% 0.0000 0.0)",
+          "oklch(83% 0.0000 0.0)",
+          "oklch(95% 0.0000 0.0)"
+        ]
+      },
+      "primary-light": {
+        "role": "Primary",
+        "displayName": "Deep blue",
+        "tonalRamp": [
+          "oklch(15% 0.1394 260.1)",
+          "oklch(26% 0.1394 260.1)",
+          "oklch(38% 0.1394 260.1)",
+          "oklch(49% 0.1394 260.1)",
+          "oklch(60% 0.1394 260.1)",
+          "oklch(72% 0.1394 260.1)",
+          "oklch(83% 0.1394 260.1)",
+          "oklch(95% 0.1394 260.1)"
+        ]
+      },
+      "on-primary-light": {
+        "role": "Primary",
+        "displayName": "Text on deep blue",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0.0)",
+          "oklch(26% 0.0000 0.0)",
+          "oklch(38% 0.0000 0.0)",
+          "oklch(49% 0.0000 0.0)",
+          "oklch(60% 0.0000 0.0)",
+          "oklch(72% 0.0000 0.0)",
+          "oklch(83% 0.0000 0.0)",
+          "oklch(95% 0.0000 0.0)"
+        ]
+      },
+      "background": {
+        "role": "Neutral",
+        "displayName": "Dark canvas",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0.0)",
+          "oklch(26% 0.0000 0.0)",
+          "oklch(38% 0.0000 0.0)",
+          "oklch(49% 0.0000 0.0)",
+          "oklch(60% 0.0000 0.0)",
+          "oklch(72% 0.0000 0.0)",
+          "oklch(83% 0.0000 0.0)",
+          "oklch(95% 0.0000 0.0)"
+        ]
+      },
+      "card": {
+        "role": "Neutral",
+        "displayName": "Dark card and menu surface",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0.0)",
+          "oklch(26% 0.0000 0.0)",
+          "oklch(38% 0.0000 0.0)",
+          "oklch(49% 0.0000 0.0)",
+          "oklch(60% 0.0000 0.0)",
+          "oklch(72% 0.0000 0.0)",
+          "oklch(83% 0.0000 0.0)",
+          "oklch(95% 0.0000 0.0)"
+        ]
+      },
+      "foreground": {
+        "role": "Neutral",
+        "displayName": "Dark-theme text",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0.0)",
+          "oklch(26% 0.0000 0.0)",
+          "oklch(38% 0.0000 0.0)",
+          "oklch(49% 0.0000 0.0)",
+          "oklch(60% 0.0000 0.0)",
+          "oklch(72% 0.0000 0.0)",
+          "oklch(83% 0.0000 0.0)",
+          "oklch(95% 0.0000 0.0)"
+        ]
+      },
+      "muted-foreground": {
+        "role": "Neutral",
+        "displayName": "Dark-theme secondary text",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0.0)",
+          "oklch(26% 0.0000 0.0)",
+          "oklch(38% 0.0000 0.0)",
+          "oklch(49% 0.0000 0.0)",
+          "oklch(60% 0.0000 0.0)",
+          "oklch(72% 0.0000 0.0)",
+          "oklch(83% 0.0000 0.0)",
+          "oklch(95% 0.0000 0.0)"
+        ]
+      },
+      "border": {
+        "role": "Neutral",
+        "displayName": "Dark-theme divider",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0.0)",
+          "oklch(26% 0.0000 0.0)",
+          "oklch(38% 0.0000 0.0)",
+          "oklch(49% 0.0000 0.0)",
+          "oklch(60% 0.0000 0.0)",
+          "oklch(72% 0.0000 0.0)",
+          "oklch(83% 0.0000 0.0)",
+          "oklch(95% 0.0000 0.0)"
+        ]
+      },
+      "background-light": {
+        "role": "Neutral",
+        "displayName": "Light canvas",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0.0)",
+          "oklch(26% 0.0000 0.0)",
+          "oklch(38% 0.0000 0.0)",
+          "oklch(49% 0.0000 0.0)",
+          "oklch(60% 0.0000 0.0)",
+          "oklch(72% 0.0000 0.0)",
+          "oklch(83% 0.0000 0.0)",
+          "oklch(95% 0.0000 0.0)"
+        ]
+      },
+      "card-light": {
+        "role": "Neutral",
+        "displayName": "Light card and menu surface",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0.0)",
+          "oklch(26% 0.0000 0.0)",
+          "oklch(38% 0.0000 0.0)",
+          "oklch(49% 0.0000 0.0)",
+          "oklch(60% 0.0000 0.0)",
+          "oklch(72% 0.0000 0.0)",
+          "oklch(83% 0.0000 0.0)",
+          "oklch(95% 0.0000 0.0)"
+        ]
+      },
+      "foreground-light": {
+        "role": "Neutral",
+        "displayName": "Light-theme text",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0.0)",
+          "oklch(26% 0.0000 0.0)",
+          "oklch(38% 0.0000 0.0)",
+          "oklch(49% 0.0000 0.0)",
+          "oklch(60% 0.0000 0.0)",
+          "oklch(72% 0.0000 0.0)",
+          "oklch(83% 0.0000 0.0)",
+          "oklch(95% 0.0000 0.0)"
+        ]
+      },
+      "muted-foreground-light": {
+        "role": "Neutral",
+        "displayName": "Light-theme secondary text",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0.0)",
+          "oklch(26% 0.0000 0.0)",
+          "oklch(38% 0.0000 0.0)",
+          "oklch(49% 0.0000 0.0)",
+          "oklch(60% 0.0000 0.0)",
+          "oklch(72% 0.0000 0.0)",
+          "oklch(83% 0.0000 0.0)",
+          "oklch(95% 0.0000 0.0)"
+        ]
+      },
+      "border-light": {
+        "role": "Neutral",
+        "displayName": "Light-theme divider",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0.0)",
+          "oklch(26% 0.0000 0.0)",
+          "oklch(38% 0.0000 0.0)",
+          "oklch(49% 0.0000 0.0)",
+          "oklch(60% 0.0000 0.0)",
+          "oklch(72% 0.0000 0.0)",
+          "oklch(83% 0.0000 0.0)",
+          "oklch(95% 0.0000 0.0)"
+        ]
+      },
+      "input": {
+        "role": "Neutral",
+        "displayName": "Control border",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0.0)",
+          "oklch(26% 0.0000 0.0)",
+          "oklch(38% 0.0000 0.0)",
+          "oklch(49% 0.0000 0.0)",
+          "oklch(60% 0.0000 0.0)",
+          "oklch(72% 0.0000 0.0)",
+          "oklch(83% 0.0000 0.0)",
+          "oklch(95% 0.0000 0.0)"
+        ]
+      },
+      "destructive": {
+        "role": "Semantic",
+        "displayName": "Dark-theme error",
+        "tonalRamp": [
+          "oklch(15% 0.0887 25.1)",
+          "oklch(26% 0.0887 25.1)",
+          "oklch(38% 0.0887 25.1)",
+          "oklch(49% 0.0887 25.1)",
+          "oklch(60% 0.0887 25.1)",
+          "oklch(72% 0.0887 25.1)",
+          "oklch(83% 0.0887 25.1)",
+          "oklch(95% 0.0887 25.1)"
+        ]
+      },
+      "destructive-light": {
+        "role": "Semantic",
+        "displayName": "Light-theme error",
+        "tonalRamp": [
+          "oklch(15% 0.1563 27.5)",
+          "oklch(26% 0.1563 27.5)",
+          "oklch(38% 0.1563 27.5)",
+          "oklch(49% 0.1563 27.5)",
+          "oklch(60% 0.1563 27.5)",
+          "oklch(72% 0.1563 27.5)",
+          "oklch(83% 0.1563 27.5)",
+          "oklch(95% 0.1563 27.5)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display-compact": {
+        "displayName": "Compact display",
+        "purpose": "Home display heading below the medium breakpoint."
+      },
+      "display-wide": {
+        "displayName": "Wide display",
+        "purpose": "Home display heading from the medium breakpoint."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Prose and project descriptions up to 68ch."
+      },
+      "technical-label": {
+        "displayName": "Technical label",
+        "purpose": "Project technologies and work status."
+      }
+    },
+    "motion": [
+      {
+        "name": "default-duration",
+        "value": "150ms",
+        "purpose": "Control color transitions, the mobile drawer and the footer language indicator."
+      },
+      {
+        "name": "default-ease",
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Standard control transition easing."
+      },
+      {
+        "name": "drawer-ease",
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Mobile drawer ease-in-out."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "none",
+        "purpose": "Remove transitions and animations when requested."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "960px"
+      },
+      {
+        "name": "xl",
+        "value": "1200px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Solid accent button for the main action.",
+      "html": "<button class=\"ds-primary\" type=\"button\">Contact</button>",
+      "css": ".ds-primary { box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 8px 16px; white-space: nowrap; border-radius: var(--radius-lg, .5rem); text-decoration: none;font-family: inherit; font-size: .875rem; line-height: 1.25rem; font-weight: 500;transition: background-color var(--default-transition-duration, 150ms) var(--default-transition-timing-function, cubic-bezier(.4, 0, .2, 1)), color var(--default-transition-duration, 150ms) var(--default-transition-timing-function, cubic-bezier(.4, 0, .2, 1));border: 0; background: var(--accent, #9bb9f3); color: var(--on-accent, #101010); } .ds-primary:hover { background: color-mix(in oklab, var(--accent, #9bb9f3) 90%, transparent); } .ds-primary[aria-disabled=\"true\"] { opacity: .7; } .ds-primary:focus-visible { outline: 2px solid var(--accent, #9bb9f3); outline-offset: 2px; } @media (prefers-reduced-motion: reduce) { .ds-primary { transition: none; } }"
+    },
+    {
+      "name": "Outline action",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Neutral secondary action with a visible control border.",
+      "html": "<button class=\"ds-outline\" type=\"button\">My CV</button>",
+      "css": ".ds-outline { box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 8px 16px; white-space: nowrap; border-radius: var(--radius-lg, .5rem); text-decoration: none;font-family: inherit; font-size: .875rem; line-height: 1.25rem; font-weight: 500;transition: background-color var(--default-transition-duration, 150ms) var(--default-transition-timing-function, cubic-bezier(.4, 0, .2, 1)), color var(--default-transition-duration, 150ms) var(--default-transition-timing-function, cubic-bezier(.4, 0, .2, 1));border: 1px solid var(--input, #767676); background: var(--background, #101010); color: var(--foreground, #f2f2f2); } .ds-outline:hover { background: var(--card, #191919); } .ds-outline:focus-visible { outline: 2px solid var(--accent, #9bb9f3); outline-offset: 2px; } @media (prefers-reduced-motion: reduce) { .ds-outline { transition: none; } }"
+    },
+    {
+      "name": "Language control",
+      "kind": "nav",
+      "refersTo": "locale-control",
+      "description": "Footer language links with one accented current segment.",
+      "html": "<nav aria-label=\"Language\" class=\"ds-locale\"><div class=\"ds-locale-indicator\" aria-hidden=\"true\"><span>Français</span><span>English</span></div><a href=\"#ds-preview\" lang=\"fr\" hreflang=\"fr\">Français</a><a href=\"#ds-preview\" lang=\"en\" hreflang=\"en\" aria-current=\"true\">English</a></nav>",
+      "css": ".ds-locale { position: relative; isolation: isolate; display: inline-grid; grid-template-columns: 1fr 1fr; width: fit-content; border: 1px solid var(--border, #383838); border-radius: var(--radius-lg, 8px); font-size: 14px; font-weight: 500; line-height: 20px; } .ds-locale a, .ds-locale-indicator span { display: flex; align-items: center; justify-content: center; height: 36px; padding-inline: 12px; } .ds-locale a { color: var(--muted-foreground, #b4b4b4); border-radius: var(--radius-lg, 8px); text-decoration: none; } .ds-locale a:hover { color: var(--foreground, #f2f2f2); } .ds-locale a:focus-visible { outline: 2px solid var(--accent, #9bb9f3); outline-offset: 2px; } .ds-locale-indicator { pointer-events: none; position: absolute; inset: 0; z-index: 10; display: grid; grid-template-columns: 1fr 1fr; background: var(--accent, #9bb9f3); color: var(--on-accent, #101010); clip-path: inset(0 0 0 50% round 7px); transition: clip-path 150ms; } @media (prefers-reduced-motion: reduce) { .ds-locale-indicator { transition: none; } }"
+    },
+    {
+      "name": "Text field",
+      "kind": "input",
+      "refersTo": "text-field",
+      "description": "Email field with a visible label and a clear focus state.",
+      "html": "<label class=\"ds-field-label\" for=\"ds-email\">Email address</label><input class=\"ds-text-field\" id=\"ds-email\" type=\"email\">",
+      "css": ".ds-field-label { display: block; margin-bottom: 8px; font-family: inherit; font-size: .875rem; line-height: 1.25rem; font-weight: 500;color: var(--foreground, #f2f2f2); } .ds-text-field { box-sizing: border-box; display: block; width: 100%; height: 44px; padding: 4px 12px;transition: background-color var(--default-transition-duration, 150ms) var(--default-transition-timing-function, cubic-bezier(.4, 0, .2, 1)), color var(--default-transition-duration, 150ms) var(--default-transition-timing-function, cubic-bezier(.4, 0, .2, 1)); background: var(--background, #101010); color: var(--foreground, #f2f2f2); border: 1px solid var(--input, #767676); border-radius: var(--radius-lg, .5rem); font-family: inherit; font-size: 1rem; line-height: 1.5rem; } .ds-text-field[aria-invalid=\"true\"] { border-color: var(--destructive, #ffb4ad); } .ds-text-field:focus-visible { outline: 2px solid var(--accent, #9bb9f3); outline-offset: 2px; } @media (prefers-reduced-motion: reduce) { .ds-text-field { transition: none; } }"
+    },
+    {
+      "name": "Message field",
+      "kind": "input",
+      "refersTo": "text-area",
+      "description": "Resizable message field using the same visual language as the text field.",
+      "html": "<label class=\"ds-field-label\" for=\"ds-message\">Message</label><textarea class=\"ds-text-area\" id=\"ds-message\"></textarea>",
+      "css": ".ds-field-label { display: block; margin-bottom: 8px; font-family: inherit; font-size: .875rem; line-height: 1.25rem; font-weight: 500;color: var(--foreground, #f2f2f2); } .ds-text-area { box-sizing: border-box; display: block; width: 100%; min-height: 112px; resize: vertical; padding: 8px 12px; background: var(--background, #101010); color: var(--foreground, #f2f2f2); border: 1px solid var(--input, #767676); border-radius: var(--radius-lg, .5rem); font-family: inherit; font-size: 1rem; line-height: 1.5rem; } .ds-text-area[aria-invalid=\"true\"] { border-color: var(--destructive, #ffb4ad); } .ds-text-area:focus-visible { outline: 2px solid var(--accent, #9bb9f3); outline-offset: 2px; } @media (prefers-reduced-motion: reduce) { .ds-text-area { transition: none; } }"
+    },
+    {
+      "name": "Inline navigation",
+      "kind": "nav",
+      "refersTo": "navigation-link",
+      "description": "Text links with an underlined current page.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a class=\"ds-nav-link\" href=\"#ds-preview\">Home</a><a class=\"ds-nav-link\" href=\"#ds-preview\" aria-current=\"page\">Projects</a><a class=\"ds-nav-link\" href=\"#ds-preview\">About</a><a class=\"ds-nav-link\" href=\"#ds-preview\">Contact</a></nav>",
+      "css": ".ds-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; background: var(--background, #101010); } @media (min-width: 60rem) { .ds-nav { gap: 24px; } } .ds-nav-link { min-height: 44px; display: inline-flex; align-items: center; text-underline-offset: 4px;font-family: inherit; font-size: .875rem; line-height: 1.25rem; font-weight: 500;color: var(--muted-foreground, #b4b4b4); text-decoration: none; transition: background-color var(--default-transition-duration, 150ms) var(--default-transition-timing-function, cubic-bezier(.4, 0, .2, 1)), color var(--default-transition-duration, 150ms) var(--default-transition-timing-function, cubic-bezier(.4, 0, .2, 1)); } .ds-nav-link:hover, .ds-nav-link[aria-current=\"page\"] { color: var(--foreground, #f2f2f2); } .ds-nav-link[aria-current=\"page\"] { text-decoration: underline; } .ds-nav-link:focus-visible { outline: 2px solid var(--accent, #9bb9f3); outline-offset: 2px; } @media (prefers-reduced-motion: reduce) { .ds-nav-link { transition: none; } }"
+    },
+    {
+      "name": "Mobile drawer",
+      "kind": "nav",
+      "refersTo": "mobile-drawer",
+      "description": "Open drawer layout with its title, close control and vertical navigation.",
+      "html": "<section class=\"ds-drawer\" aria-label=\"Menu\"><div class=\"ds-drawer-heading\"><strong>Menu</strong><button class=\"ds-outline\" type=\"button\">Close</button></div><nav class=\"ds-drawer-links\" aria-label=\"Main navigation\"><a class=\"ds-nav-link\" href=\"#ds-preview\">Home</a><a class=\"ds-nav-link\" href=\"#ds-preview\" aria-current=\"page\">Projects</a><a class=\"ds-nav-link\" href=\"#ds-preview\">About</a><a class=\"ds-nav-link\" href=\"#ds-preview\">Contact</a></nav></section>",
+      "css": ".ds-drawer { box-sizing: border-box; width: 288px; max-width: 100%; padding: 24px; border-left: 1px solid var(--border, #383838); background: var(--background, #101010); color: var(--foreground, #f2f2f2); } .ds-drawer-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--border, #383838); font-size: 1.125rem; line-height: 1.75rem; } .ds-drawer-heading strong { font-weight: 600; } .ds-drawer-links { margin-top: 16px; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; } .ds-nav-link { min-height: 44px; display: inline-flex; align-items: center; text-underline-offset: 4px;font-family: inherit; font-size: .875rem; line-height: 1.25rem; font-weight: 500;color: var(--muted-foreground, #b4b4b4); text-decoration: none; transition: background-color var(--default-transition-duration, 150ms) var(--default-transition-timing-function, cubic-bezier(.4, 0, .2, 1)), color var(--default-transition-duration, 150ms) var(--default-transition-timing-function, cubic-bezier(.4, 0, .2, 1)); } .ds-nav-link:hover, .ds-nav-link[aria-current=\"page\"] { color: var(--foreground, #f2f2f2); } .ds-nav-link[aria-current=\"page\"] { text-decoration: underline; } .ds-nav-link:focus-visible { outline: 2px solid var(--accent, #9bb9f3); outline-offset: 2px; } @media (prefers-reduced-motion: reduce) { .ds-nav-link { transition: none; } } .ds-outline { box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 8px 16px; white-space: nowrap; border-radius: var(--radius-lg, .5rem); text-decoration: none;font-family: inherit; font-size: .875rem; line-height: 1.25rem; font-weight: 500;transition: background-color var(--default-transition-duration, 150ms) var(--default-transition-timing-function, cubic-bezier(.4, 0, .2, 1)), color var(--default-transition-duration, 150ms) var(--default-transition-timing-function, cubic-bezier(.4, 0, .2, 1));border: 1px solid var(--input, #767676); background: var(--background, #101010); color: var(--foreground, #f2f2f2); } .ds-outline:hover { background: var(--card, #191919); } .ds-outline:focus-visible { outline: 2px solid var(--accent, #9bb9f3); outline-offset: 2px; } @media (prefers-reduced-motion: reduce) { .ds-outline { transition: none; } }"
+    },
+    {
+      "name": "Technology tag",
+      "kind": "chip",
+      "refersTo": "technology-tag",
+      "description": "Stack label in a compact, outlined monospace chip.",
+      "html": "<span class=\"ds-tag\">Spring Boot</span>",
+      "css": ".ds-tag { color: var(--muted-foreground, #b4b4b4); font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace); font-size: .8125rem; line-height: 1.25rem; } .ds-tag { display: inline-flex; padding: 2px 10px; border: 1px solid var(--border, #383838); border-radius: var(--radius-md, 8px); }"
+    },
+    {
+      "name": "Project card",
+      "kind": "card",
+      "refersTo": "project-card",
+      "description": "Bordered card with fixed-ratio artwork and a source link.",
+      "html": "<article class=\"ds-project\"><div class=\"ds-project-media\"><svg class=\"ds-project-art\" aria-hidden=\"true\" width=\"1200\" height=\"675\" viewBox=\"0 0 1200 675\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <rect width=\"1200\" height=\"675\" fill=\"#101010\"/>\n    <g stroke=\"#9BB9F3\" stroke-width=\"2\">\n        <path d=\"M892 174L1034 256V420L892 502L750 420V256Z\"/>\n        <path d=\"M892 227L988 282V394L892 449L796 394V282Z\"/>\n        <path d=\"M892 280L942 309V367L892 396L842 367V309Z\"/>\n        <path d=\"M750 256L842 309M942 309L1034 256M1034 420L942 367M842 367L750 420M892 174V280M892 396V502\"/>\n    </g>\n    <g fill=\"#9BB9F3\">\n        <circle cx=\"892\" cy=\"174\" r=\"6\"/>\n        <circle cx=\"1034\" cy=\"256\" r=\"6\"/>\n        <circle cx=\"1034\" cy=\"420\" r=\"6\"/>\n        <circle cx=\"892\" cy=\"502\" r=\"6\"/>\n        <circle cx=\"750\" cy=\"420\" r=\"6\"/>\n        <circle cx=\"750\" cy=\"256\" r=\"6\"/>\n    </g>\n    <text x=\"96\" y=\"335\" fill=\"#F2F2F2\" font-family=\"system-ui, sans-serif\" font-size=\"96\" font-weight=\"700\">RAG API</text>\n    <text x=\"101\" y=\"396\" fill=\"#B4B4B4\" font-family=\"monospace\" font-size=\"29\">Spring Boot / pgvector / Ollama</text>\n</svg></div><div class=\"ds-project-body\"><h3 class=\"ds-project-title\">RAG API</h3><p class=\"ds-project-status\">In progress</p><p class=\"ds-project-description\">This Spring Boot REST API uses retrieval-augmented generation (RAG) to answer questions about documents. It stores their embeddings in PostgreSQL with pgvector and generates answers with local Ollama models.</p><ul class=\"ds-project-tags\" role=\"list\"><li>Java</li><li>Spring Boot</li><li>PostgreSQL</li><li>pgvector</li><li>Ollama</li></ul><a class=\"ds-project-source\" href=\"#ds-preview\" aria-label=\"View the code for RAG API on GitHub\">GitHub</a></div></article>",
+      "css": ".ds-project { display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--border, #383838); border-radius: var(--radius-lg, .5rem); background: var(--card, #191919); color: var(--foreground, #f2f2f2); } .ds-project-media { aspect-ratio: 16 / 9; border-bottom: 1px solid var(--border, #383838); } .ds-project-art { display: block; width: 100%; height: 100%; } .ds-project-body { display: flex; flex-direction: column; flex: 1; padding: 16px; } @media (min-width: 48rem) { .ds-project-body { padding: 24px; } } .ds-project-title { margin: 0; font-size: 1.25rem; font-weight: 600; line-height: 1.75rem; } .ds-project-status, .ds-project-tags { font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace); font-size: .8125rem; line-height: 1.25rem; } .ds-project-status { margin: 4px 0 0; color: var(--accent, #9bb9f3); } .ds-project-description { margin: 8px 0 0; color: var(--muted-foreground, #b4b4b4); font-size: 1rem; line-height: 1.625; } .ds-project-tags { margin: 16px 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 12px; list-style: none; color: var(--muted-foreground, #b4b4b4); } .ds-project-source { min-height: 44px; display: inline-flex; align-items: center; text-underline-offset: 4px;font-family: inherit; font-size: .875rem; line-height: 1.25rem; font-weight: 500; align-self: flex-start; margin-top: auto; color: var(--accent, #9bb9f3); text-decoration: underline; } .ds-project-source:hover { text-decoration: none; } .ds-project-source:focus-visible { outline: 2px solid var(--accent, #9bb9f3); outline-offset: 2px; } .ds-project-tags { gap: 8px; } .ds-project-tags li { display: inline-flex; padding: 2px 10px; border: 1px solid var(--border, #383838); border-radius: var(--radius-md, 8px); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Sober, text-first presentation",
+    "overview": "The portfolio uses a flat, restrained layout for technical work. Strong headings establish the reading order, a single blue accent identifies actions, and a neutral surface gives project artwork room to stand out. The shell works across both languages and both themes.",
+    "keyCharacteristics": [
+      "Inter for interface text and reading, with system monospace for technical labels.",
+      "A shared content column, compact controls, and borders that define where groups begin and end."
+    ],
+    "rules": [],
+    "dos": [
+      "Do use readable text labels for navigation and pair the current-route color with an underline.",
+      "Do pair the accent fill with its theme-specific foreground and reserve the error color for validation or failure.",
+      "Do let long copy, labels, and tags wrap within their columns in both English and French."
+    ],
+    "donts": [
+      "Don't add gradients, glass effects, neon, or decorative icons to the shell.",
+      "Don't make color the only cue for keyboard focus, link purpose, or current navigation."
+    ]
+  }
+}
