@@ -15,7 +15,6 @@ export default function Footer({ locale, labels, cvLabel }: FooterProps) {
     return (
         <footer className="border-t border-border">
             <div className="site-container flex flex-wrap items-center justify-between gap-x-6 gap-y-3 py-6 text-sm">
-                <p className="w-full text-muted-foreground md:w-auto">{labels.madeBy}</p>
                 <nav aria-label={labels.links} className="flex flex-wrap items-center gap-x-4">
                     {links.map(({ name, url }) => (
                         <a key={url} href={url} className="inline-flex min-h-9 items-center underline underline-offset-4 hover:text-accent">
