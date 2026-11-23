@@ -25,7 +25,7 @@ Anthony studies computer science and cybersecurity at INSA Hauts-de-France and f
 
 ## Brand Commitments
 
-Use a sober, text-first presentation for Anthony Rolland's personal portfolio, with one accent color. Exclude gradients, glassmorphism, neon, decorative icons, and startup landing page styling.
+Use a sober, text-first presentation for Anthony Rolland's personal portfolio, with one blue accent. Reserve the accent gradient for the role and internship availability on Home. Keep surfaces flat and icons functional.
 
 ## Evidence on Hand
 

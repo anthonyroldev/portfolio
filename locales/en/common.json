@@ -27,7 +27,7 @@
     },
     "home": {
         "headline": "I’m an apprentice software engineer focused on back-end development.",
-        "agenticDevelopment": "I use GitHub Copilot for agentic development at work and Codex on my personal projects.",
+        "agenticDevelopment": "I work with coding agents every day. I start with a spec and guide each task with skills and focused prompts.",
         "internshipCallout": "I’m looking for a software engineering internship abroad starting in May 2027.",
         "portraitAlt": "Portrait of Anthony Rolland",
         "featuredTitle": "A few projects",
@@ -42,6 +42,9 @@
         "title": "About",
         "description": "I study computer science and cybersecurity at INSA Hauts-de-France. In my apprenticeship, I use GitHub Copilot for back-end development.",
         "introduction": "At SNCF Connect & Tech, I build and maintain Spring Boot APIs using agentic development. Outside work, I’m building an API that answers questions about documents with Spring AI and pgvector.",
+        "workflowTitle": "How I work with AI",
+        "workflow": "I use GitHub Copilot at work and Codex on my personal projects. I follow spec-driven development (SDD), starting with the expected behavior and acceptance criteria before writing code.",
+        "workflowReview": "I use reusable skills for recurring tasks and focused prompts to give the agent the context it needs. That helps me save tokens and get to a useful answer in fewer turns. I review the code and check it against the spec.",
         "experienceTitle": "Experience and education",
         "experience": [
             {

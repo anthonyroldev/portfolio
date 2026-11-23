@@ -6,6 +6,22 @@
     @apply mx-auto w-full max-w-275 px-4 md:px-8;
 }
 
+@utility hero-text-accent {
+    color: var(--accent);
+
+    @supports (background-clip: text) {
+        background-color: var(--accent);
+        background-image: linear-gradient(105deg in srgb, var(--accent), color-mix(in srgb, var(--accent) 25%, var(--foreground)));
+        background-clip: text;
+        color: transparent;
+    }
+
+    @media (forced-colors: active) {
+        background: none;
+        color: CanvasText;
+    }
+}
+
 @theme {
     --breakpoint-lg: 60rem;
     --breakpoint-xl: 75rem;

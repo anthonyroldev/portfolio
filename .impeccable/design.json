@@ -383,7 +383,9 @@
       "Inter for interface text and reading, with system monospace for technical labels.",
       "A shared content column, compact controls, and borders that define where groups begin and end."
     ],
-    "rules": [],
+    "rules": [
+      "Blend the accent toward the regular foreground for the role and internship availability on Home. Use solid text in forced-colors mode."
+    ],
     "dos": [
       "Do use readable text labels for navigation and pair the current-route color with an underline.",
       "Do pair the accent fill with its theme-specific foreground and reserve the error color for validation or failure.",

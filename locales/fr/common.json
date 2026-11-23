@@ -27,7 +27,7 @@
     },
     "home": {
         "headline": "Je suis ingénieur logiciel en alternance, orienté back-end.",
-        "agenticDevelopment": "Je pratique le développement agentique avec GitHub Copilot au travail et Codex sur mes projets personnels.",
+        "agenticDevelopment": "J’utilise des agents de code au quotidien. Je pars d’une spécification et je m’appuie sur des skills et des prompts ciblés.",
         "internshipCallout": "Je cherche un stage en ingénierie logicielle à l’étranger à partir de mai 2027.",
         "portraitAlt": "Portrait d’Anthony Rolland",
         "featuredTitle": "Quelques projets",
@@ -42,6 +42,9 @@
         "title": "À propos",
         "description": "J’étudie l’informatique et la cybersécurité à l’INSA Hauts-de-France. En alternance, je développe côté back-end avec GitHub Copilot.",
         "introduction": "Chez SNCF Connect & Tech, je développe et maintiens des API Spring Boot en utilisant le développement agentique. Sur mon temps libre, je crée une API qui répond à des questions sur des documents avec Spring AI et pgvector.",
+        "workflowTitle": "Comment je travaille avec l’IA",
+        "workflow": "J’utilise GitHub Copilot au travail et Codex sur mes projets personnels. Je pratique le développement guidé par les spécifications (SDD). Avant de coder, je précise le comportement attendu et les critères d’acceptation.",
+        "workflowReview": "Je réutilise des skills pour les tâches récurrentes et j’écris des prompts ciblés pour donner à l’agent le contexte utile. Ça m’aide à économiser des tokens et à obtenir une réponse exploitable en moins d’échanges. Je relis le code et je vérifie qu’il répond à la spécification.",
         "experienceTitle": "Expérience et formation",
         "experience": [
             {

@@ -30,15 +30,21 @@ export default async function Page({ params }: PageProps) {
         notFound();
     }
 
-    const { about, home } = getDictionary(lang);
+    const { about } = getDictionary(lang);
 
     return (
         <div className="max-w-[68ch] py-8 md:py-12">
             <h1 className="mb-4 text-4xl font-bold tracking-tight md:mb-6">{about.title}</h1>
-            <div className="flex flex-col gap-4 text-muted-foreground">
-                <p>{about.introduction}</p>
-                <p>{home.agenticDevelopment}</p>
-            </div>
+            <p className="text-muted-foreground">{about.introduction}</p>
+            <section aria-labelledby="agentic-development" className="mt-8 md:mt-12">
+                <h2 id="agentic-development" className="text-2xl font-semibold tracking-tight md:text-[1.75rem]">
+                    {about.workflowTitle}
+                </h2>
+                <div className="mt-4 flex flex-col gap-4 text-muted-foreground">
+                    <p>{about.workflow}</p>
+                    <p>{about.workflowReview}</p>
+                </div>
+            </section>
             <section aria-labelledby="experience" className="mt-8 md:mt-12">
                 <h2 id="experience" className="text-2xl font-semibold tracking-tight md:text-[1.75rem]">
                     {about.experienceTitle}

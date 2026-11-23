@@ -193,6 +193,7 @@ The portfolio uses a flat, restrained layout for technical work. Strong headings
 A single blue accent sits against neutral backgrounds in both themes. The dark palette is the default. Light and System are available in the theme menu.
 
 - Use `primary` or `primary-light` for the main action, text links, focus outlines, and project status. Pair a solid accent fill with the corresponding `on-primary` token.
+- Blend the accent toward the regular foreground for the role and internship availability on Home. Use solid text in forced-colors mode.
 - Use `background` for the document and sticky header, `card` for cards and menus, and `muted-foreground` for supporting copy. Adapt each role to the active theme.
 - Use `border` for separators and card edges, and `input` for the stronger border of fields and outline controls. The control border is shared by both themes.
 - Use `destructive` and `destructive-light` on invalid field borders and error messages.
