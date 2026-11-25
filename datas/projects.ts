@@ -14,7 +14,7 @@ const projects: ProjectRecord[] = [
         status: "inProgress",
         image: "/projects/6/rag-api.svg",
         tags: ["Java", "Spring Boot", "PostgreSQL", "pgvector", "Ollama"],
-        githubUrl: "https://github.com/anthonyroldev/rag-spring",
+        githubUrl: "https://github.com/anthonyroll/rag-spring",
     },
     {
         id: 1,
@@ -22,7 +22,7 @@ const projects: ProjectRecord[] = [
         descriptionKey: "picitApi",
         image: "/projects/1/picit.png",
         tags: ["Java", "Spring Boot", "MongoDB", "Neo4j", "Docker"],
-        githubUrl: "https://github.com/anthonyroldev/picit-api",
+        githubUrl: "https://github.com/anthonyroll/picit-api",
     },
     {
         id: 2,
@@ -30,7 +30,7 @@ const projects: ProjectRecord[] = [
         descriptionKey: "picitFront",
         image: "/projects/2/picit_front.png",
         tags: ["TypeScript", "Next.js", "Tailwind CSS"],
-        githubUrl: "https://github.com/anthonyroldev/picit-front",
+        githubUrl: "https://github.com/anthonyroll/picit-front",
     },
     {
         id: 3,
@@ -38,7 +38,7 @@ const projects: ProjectRecord[] = [
         descriptionKey: "fcrypt",
         image: "/projects/3/art_project_2.png",
         tags: ["Spring Shell", "Java", "Encryption", "Docker"],
-        githubUrl: "https://github.com/anthonyroldev/Fcrpyt",
+        githubUrl: "https://github.com/anthonyroll/Fcrpyt",
     },
     {
         id: 4,
@@ -46,7 +46,7 @@ const projects: ProjectRecord[] = [
         descriptionKey: "clearLinks",
         image: "/projects/4/clear_links.png",
         tags: ["TypeScript", "Solidity", "Ethereum", "Hardhat"],
-        githubUrl: "https://github.com/anthonyroldev/ClearLinks-Contracts",
+        githubUrl: "https://github.com/anthonyroll/ClearLinks-Contracts",
     },
     {
         id: 5,
@@ -54,7 +54,7 @@ const projects: ProjectRecord[] = [
         descriptionKey: "rythmopolis",
         image: "/projects/5/rythmopolis.png",
         tags: ["TypeScript", "Angular", "Tailwind CSS"],
-        githubUrl: "https://github.com/anthonyroldev/Site-Rythmopolis",
+        githubUrl: "https://github.com/anthonyroll/Site-Rythmopolis",
     },
 ];
 

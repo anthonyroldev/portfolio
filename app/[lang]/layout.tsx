@@ -116,7 +116,7 @@ export default async function RootLayout({ children, params }: LayoutProps) {
                 jobTitle: dictionary.metadata.jobTitle,
                 description: dictionary.metadata.personDescription,
                 sameAs: [
-                    "https://github.com/anthonyroldev",
+                    "https://github.com/anthonyroll",
                     "https://www.linkedin.com/in/anthony-rolland-info/",
                 ],
             },

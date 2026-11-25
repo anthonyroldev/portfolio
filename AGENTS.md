@@ -125,7 +125,7 @@ Extends `next/core-web-vitals` and `next/typescript` only. No custom rules. Run 
 
 - **Branch:** `main`
 - **Commit style:** Lowercase conventional commits — `feat:`, `fix:`, `refactor:`, `docs:`, etc.
-- **Remote:** GitHub (`anthonyroldev/portfolio`)
+- **Remote:** GitHub (`anthonyroll/portfolio`)
 - No pre-commit hooks or CI/CD pipelines.
 
 ## Dependencies of Note
